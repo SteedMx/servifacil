@@ -1,0 +1,20 @@
+# modules and dependencies
+node_modules
+
+# auto-saved files
+*.swp
+*~
+
+# logging
+log
+logs
+*.log
+*#
+#*
+
+# bundled files
+build
+
+# misc
+requerimientos
+
