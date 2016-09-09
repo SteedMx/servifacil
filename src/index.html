@@ -5,32 +5,39 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
 
   <title>Servifacil</title>
+
+  <link href='css/main.css' rel='stylesheet'>
 </head>
 <body>
 
   <main id='root'>
     <nav class='nav'>
       <div class='nav__bar'>
-        <div class='nav__hamburguer'>
-          <div class='nav__hamburgerBar'></div>
-          <div class='nav__hamburgerBar'></div>
-          <div class='nav__hamburgerBar'></div>
+        <div class='nav__hamburguer' data-active='false'>
+          <span class='nav__hamburguerBar'></span>
+          <span class='nav__hamburguerBar'></span>
+          <span class='nav__hamburguerBar'></span>
+          <span class='nav__hamburguerBar'></span>
         </div>
        </div>
 
-       <ul class='nav__mobile'>
+       <ul class='nav__mobile' data-active='false'>
          <li class='nav__mobileItem'>
-          <a class='nav__mobileLink' href='#'></a>
+          <a class='nav__mobileLink' href='#'>NOSOTROS</a>
         </li>
         <li class='nav__mobileItem'>
-          <a class='nav__mobileLink' href='#'></a>
+          <a class='nav__mobileLink' href='#'>SERVICIOS</a>
         </li>
         <li class='nav__mobileItem'>
-          <a class='nav__mobileLink' href='#'></a>
+          <a class='nav__mobileLink' href='#'>PRODUCTIOS</a>
+        </li>
+        <li class='nav__mobileItem'>
+          <a class='nav__mobileLink' href='#'>CONTACTO</a>
         </li>
        </ul>
     </nav>
   </main>
 
+  <script async defer src='javascript/all.js'></script>
 </body>
 </html>

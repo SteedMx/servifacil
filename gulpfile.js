@@ -35,7 +35,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('debug:javascript', function () {
-  gulp.src('src/javascript/*.js')
+  gulp.src('src/javascript/**/*.js')
     .pipe(concat('all.js'))
     .pipe(gulp.dest('build/javascript'));
 });
@@ -49,7 +49,10 @@ gulp.task('debug:images', function () {
 gulp.task('debug:css', function () {
   gulp
     .src('src/styles/main.styl')
-    .pipe(stylus({ compress: false }))
+    .pipe(stylus({
+      compress: false,
+      'include css': true
+    }))
     .pipe(gulp.dest('build/css'));
 });
 
@@ -85,6 +88,7 @@ gulp.task('dist:css', function () {
     .src('src/styles/main.styl')
     .pipe(stylus({
       compress: true,
+      'include css': true,
       user: [autoprefixer()]
     }))
     .pipe(gulp.dest('build/css'));
@@ -133,6 +137,7 @@ gulp.task('gh:css', function () {
     .src('src/styles/main.styl')
     .pipe(stylus({
       compress: true,
+      'include css': true,
       user: [autoprefixer()]
     }))
     .pipe(gulp.dest('docs/css'));
