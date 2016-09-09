@@ -29,6 +29,7 @@ Gulp will run the next tasks:
 - `debug:css`: will compile all the stylus files ffom `src` directory and will create `main.css` in `build` directory.
 - `debug:javascript`: will concat all javascript files from `src` and will create `all.js` in `build` directory.
 - `server`: will start a server at `localhost:8080` that will serve `build` directory
+- `watch`: will watch all `src` files, if some file changes will re-run the corresponding task.
 
 ### Production
 ```
