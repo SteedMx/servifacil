@@ -42,7 +42,7 @@ gulp.task('debug:javascript', function () {
 
 gulp.task('debug:images', function () {
   gulp
-    .src(['src/images/*.png'])
+    .src(['src/images/**/*.*'])
     .pipe(gulp.dest('build/images'));
 });
 
@@ -74,7 +74,7 @@ gulp.task('dist:javascript', function () {
 
 gulp.task('dist:images', function () {
   gulp
-    .src(['src/images/*.png'])
+    .src(['src/images/**/*.*'])
     .pipe(imageop({
       optimizationLevel: 5,
       progressive: true,
@@ -123,7 +123,7 @@ gulp.task('gh:javascript', function () {
 
 gulp.task('gh:images', function () {
   gulp
-    .src(['src/images/*.png'])
+    .src(['src/images/**/*.*'])
     .pipe(imageop({
       optimizationLevel: 5,
       progressive: true,
@@ -151,6 +151,6 @@ gulp.task('gh:html', function () {
     .pipe(gulp.dest('docs'));
 });
 
-gulp.task('default', ['server', 'debug:javascript', 'debug:css', 'debug:html', 'watch']);
+gulp.task('default', ['server', 'debug:javascript', 'debug:css', 'debug:html', 'debug:images', 'watch']);
 gulp.task('github', ['gh:javascript', 'gh:images', 'gh:css', 'gh:html'])
 gulp.task('build', ['dist:javascript', 'dist:css', 'dist:html', 'dist:images', 'clean']);
