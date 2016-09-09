@@ -7,6 +7,8 @@ var imageop = require('gulp-image-optimization');
 var concat = require('gulp-concat');
 var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
+var autoprefixer = require('gulp-autoprefixer')
+var del = require('del')
 
 /*!
  * Development tasks
@@ -81,7 +83,10 @@ gulp.task('dist:images', function () {
 gulp.task('dist:css', function () {
   gulp
     .src('src/styles/main.styl')
-    .pipe(stylus({ compress: true }))
+    .pipe(stylus({
+      compress: true,
+      user: [autoprefixer()]
+    }))
     .pipe(gulp.dest('build/css'));
 });
 
@@ -126,7 +131,10 @@ gulp.task('gh:images', function () {
 gulp.task('gh:css', function () {
   gulp
     .src('src/styles/main.styl')
-    .pipe(stylus({ compress: true }))
+    .pipe(stylus({
+      compress: true,
+      user: [autoprefixer()]
+    }))
     .pipe(gulp.dest('docs/css'));
 });
 

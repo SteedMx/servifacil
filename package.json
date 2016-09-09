@@ -10,7 +10,9 @@
   "author": "Michell Ayala <starships@outlook.com>",
   "license": "ISC",
   "devDependencies": {
+    "del": "2.2.2",
     "gulp": "3.9.1",
+    "gulp-autoprefixer": "3.1.1",
     "gulp-concat": "2.6.0",
     "gulp-htmlmin": "2.0.0",
     "gulp-image-optimization": "0.1.3",

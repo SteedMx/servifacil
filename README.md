@@ -33,7 +33,7 @@ Gulp will run the next tasks:
 
 ### Production
 ```
-$ gulp dist
+$ gulp build
 ```
 
 Gulp will run the next tasks:
