@@ -20,7 +20,7 @@ You need to have installed [gulp](http://gulpjs.com/) in your machine.
 
 ### Development (debug)
 ```
-$ gulp [build]
+$ gulp [default]
 ```
 
 Gulp will run the next tasks:
