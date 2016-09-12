@@ -16,7 +16,9 @@ $(document).ready(function() {
   $('.nav__mobileLink').each(function (index, element) {
     $(element).on('click', function (event) {
       var hamburguer = document.querySelector('.nav__hamburguer')
+      var mobile = document.querySelector('.nav__mobile')
       hamburguer.dataset.active = 'false'
+      mobile.dataset.active = 'false'
     })
   })
 })

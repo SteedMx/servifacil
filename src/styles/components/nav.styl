@@ -1,0 +1,77 @@
+.nav
+  &__bar
+    background-color $background-black
+    display block
+    overflow hidden
+
+  &__hamburguer
+    cursor pointer
+    float right
+    height 26px
+    margin 1rem
+    position relative
+    transform rotate(0deg)
+    transition 0.5s ease-in-out
+    width 32px
+
+    &[data-active='true'] .nav__hamburguerBar:nth-child(1)
+      top 18px
+      width 0%
+      left 50%
+
+    &[data-active='true'] .nav__hamburguerBar:nth-child(2)
+      transform rotate(45deg)
+
+    &[data-active='true'] .nav__hamburguerBar:nth-child(3)
+      transform rotate(-45deg)
+
+    &[data-active='true'] .nav__hamburguerBar:nth-child(4)
+      top 18px
+      width 0%
+      left 50%
+
+    &Bar
+      background white
+      border-radius 9px
+      display block
+      height 4px
+      left 0
+      opacity 1
+      position absolute
+      transform rotate(0deg)
+      transition 0.25s ease-in-out
+      width 100%
+
+      &:nth-child(1)
+        top 0px
+
+      &:nth-child(2)
+      &:nth-child(3)
+        top 10px
+
+      &:nth-child(4)
+        top 20px
+
+  &__mobile
+    background-color $background-black
+    display block
+    margin 0
+    padding 0
+    list-style none
+    text-align center
+
+    &Link
+      background-color $background-menu-black
+      color white
+      display block
+      font-size 0.9rem
+      padding 0.75rem 0
+      text-decoration none
+      transition all 0.25s ease-in
+
+      &:hover
+        cursor pointer
+        background-color $hover-black
+
+    &[data-active='false']
+      display none
