@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  var hamburguer = document.querySelector('.nav__hamburguer')
+  var hamburguer = document.querySelector('.nav-mobile__hamburguer')
 
   hamburguer.addEventListener('click', function () {
-    var mobile = document.querySelector('.nav__mobile')
+    var mobile = document.querySelector('.nav-mobile__tabs')
 
     if (hamburguer.dataset.active === 'true') {
       hamburguer.dataset.active = 'false'
@@ -15,8 +15,8 @@ $(document).ready(function() {
 
   $('.nav__mobileLink').each(function (index, element) {
     $(element).on('click', function (event) {
-      var hamburguer = document.querySelector('.nav__hamburguer')
-      var mobile = document.querySelector('.nav__mobile')
+      var hamburguer = document.querySelector('.nav-mobile__hamburguer')
+      var mobile = document.querySelector('.nav-mobile__tabs')
       hamburguer.dataset.active = 'false'
       mobile.dataset.active = 'false'
     })
