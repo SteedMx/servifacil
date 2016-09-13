@@ -1,3 +1,6 @@
+# Remove macOS trash
+.DS_Store
+
 # modules and dependencies
 node_modules
 
