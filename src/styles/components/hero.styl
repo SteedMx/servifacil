@@ -1,39 +1,9 @@
 .hero
-  align-items center
+  background-position bottom center
+  background-size cover
+  background-repeat no-repeat
   background-image url(../images/hero-background.jpg)
-  display flex
-  justify-content center
   height 100vh
   margin 0
   padding 0
 
-  &__title
-    color white
-    display block
-    font-size 4rem
-    margin 1rem
-    text-align center
-    text-shadow 1px 1px 1px rgb(0 ,  0,  0),
-                4px 2px 2px rgb(30, 30, 30),
-                6px 3px 3px rgb(60, 60, 60),
-                8px 8px 8px rgb(90, 90, 90)
-
-  &__slogan
-    color white
-    display block
-    font-size 2rem
-    margin 0
-    text-align center
-    text-shadow 1px 1px 1px rgb(0 ,  0,  0),
-                4px 2px 2px rgb(30, 30, 30),
-                6px 3px 3px rgb(60, 60, 60),
-                8px 8px 8px rgb(90, 90, 90)
-
-  @media all and (max-width 500px)
-    background-position top center
-    background-repeat no-repeat
-    background-size contain
-
-  @media all and (min-width 1200px)
-    background-position bottom center
-    background-size cover
