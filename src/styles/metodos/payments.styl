@@ -22,19 +22,72 @@
     top 110px
     width 300px
 
-  &__image-debt
+  &__picture-debt
+    display inline-block
     height 70px
-    left 820px
+    left 830px
     position relative
-    top -395px
+    top -400px
+
+    &Image
+      height 60px
+
+    &Text
+      color white
+      font-weight bold
+      text-align center
 
   &__see-debt
+    bottom -120px
     color white
+    display inline-block
     font-weight bold
-    left 705px
+    left -10px
     position relative
     text-decoration none
-    top -220px
+    transition all 0.25s ease
 
     &:hover
       text-decoration underline
+
+  &__credit
+    display block
+    margin 0 auto
+    position relative
+    transform rotate(180deg)
+    width 60%
+
+    &Text
+      color white
+      font-size 1.1rem
+      left 560px
+      position absolute
+      text-align center
+      top 150px
+      width 350px
+
+    &Picture
+      display inline-block
+      left 270px
+      position absolute
+      top 310px
+
+      &Image
+        height 70px
+
+      &Text
+        color white
+        font-weight bold
+        text-align center
+
+    &See-more
+      color white
+      font-weight bold
+      left 310px
+      position absolute
+      text-decoration none
+      top 153px
+
+      &:hover
+        text-decoration underline
+
