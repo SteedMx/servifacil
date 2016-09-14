@@ -48,7 +48,7 @@ gulp.task('debug:images', function () {
 
 gulp.task('debug:css', function () {
   gulp
-    .src('src/styles/main.styl')
+    .src('src/styles/*.styl')
     .pipe(stylus({
       compress: false,
       'include css': true
@@ -85,7 +85,7 @@ gulp.task('dist:images', function () {
 
 gulp.task('dist:css', function () {
   gulp
-    .src('src/styles/main.styl')
+    .src('src/styles/*.styl')
     .pipe(stylus({
       compress: true,
       'include css': true,
@@ -134,7 +134,7 @@ gulp.task('gh:images', function () {
 
 gulp.task('gh:css', function () {
   gulp
-    .src('src/styles/main.styl')
+    .src('src/styles/*.styl')
     .pipe(stylus({
       compress: true,
       'include css': true,
