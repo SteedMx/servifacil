@@ -10,10 +10,52 @@
 </head>
 <body>
 
+  <div id='modal-debit'>
+    <h2>Servifácil débito</h2>
+    <p>En este producto se ofrecen todas las ventajas del control automatizado. Su depósito es administrado por el Sistema de Control de Flotillas, que va facturando sus consumos en el periodo solicitado, y generando saldos actualizados conforme usted realiza sus pagos. El medio para realizar la carga de combustible es a través de tarjetas  de banda magnética con NIP o códigos de barra, y esta información genera reportes en la <a href='http://sfsct.no-ip.org/fw/login.aspx'>página web</a>  con la siguiente información: marca y tipo de vehículo, número económico, placas, fecha y hora de la carga, folio de despacho, consumo en litros, y en pesos. Además puede aplicar  restricciones a sus vehículos con límites en horario, litros, días específicos.</p>
+    <h3>Qué se requiere?</h3>
+    <ul>
+      <li>Depósito en garantía a la cuenta de Servicio Fácil del Sureste S.A. de C.V.</li>
+      <li>Datos fiscales del cliente para facturar (Cédula RFC).</li>
+      <li>Método de pago y 4 últimos digitos de su cuenta, así como un correo electrónico para el envío de sus facturas.</li>
+      <li>Identificación oficial (copia IFE).</li>
+      <li>Comprobante de domicilio fiscal.</li>
+      <li>Registro del parque vehicular del cliente (Formato DCM-F-04).</li>
+    </ul>
+
+    <h3>Ventajas</h3>
+    <ul>
+      <li>Control automatizado de carga con tarjetas de banda magnética o código de barras.</li>
+      <li>Reporte en página web, por cad avehículo y por estación de servicio.</li>
+      <li>Consulta vía internet en tiempo real</li>
+      <li>Restricciones de acuerdo con sus necesidades, para un mejor control de su combustible por unidad.</li>
+    </ul>
+
+    <h3>Beneficios</h3>
+    <ul>
+      <li>Facilidad y rapidez en la carga del combustible de sus unidades.</li>
+      <li>Seguridad y control de sus cargas, ya que éstas generan reportes de consumo por fecha, por vehículo, y por estación de servicio, así como reporte de rendimiento (require kilometraje).</li>
+      <li>Sin comisión por emisión de tarjetas.</li>
+      <li>Cobertura geográfica en su territorio de operación con estaciones afiliadas a Grupo Servifácil.</li>
+    </ul>
+
+    <h3>Proceso de facturación y pago de facturas</h3>
+    <ul>
+      <li>Cortes semanales de Viernes a Jueves (se puede facturar según se requira).</li>
+      <li>La factura electrónica se envía a la dirección de correo electrónico que nos indique.</li>
+      <li>Para mantener saldo vigente, deberá cubrir con el monto total de sus facturas a las cuentas que correspondan cada una (depósito en cuenta y/o transferencia electrónica).</li>
+      <li>Enviar comprobantes de pago, y llamar para confirmar su aplicación al depto. de Crédito y Cobranza (921) 218 6738 ext. 150, 155, 180.</li>
+      <li>Todas las cargas generan reportes de consumos y saldos, mismos que puede consultar haciendo click <a href='http://sfsct.no-ip.org/fw/login.aspx'>aqui</a> con su número de cliente.</li>
+      <li>Al inicio de sus cargas debe llamar al (921) 218 6738 ext 140, 142, para registrar su contraseña.</li>
+    </ul>
+  </div>
+  <div id='modal-credit'>
+  </div>
+  <div id='modal-values'>
+  </div>
+
   <main>
-    <header class='hero'>
-      <div class='hero__container'>
-        <img class='hero__logo' src='images/logo.png'>
+      <header class='hero'> <div class='hero__container'> <img class='hero__logo' src='images/logo.png'>
         <h2 class='hero__title'>FORMAS DE PAGO</h2>
 
         <div class='hero__float'>
@@ -42,7 +84,7 @@
             <img class='payments__picture-debtImage' src='images/card-white.png'>
             <p class='payments__picture-debtText'>DÉBITO</p>
           </p>
-          <a class='payments__see-debt' href='#'>VER MAS</a>
+          <a class='payments__see-debt' id='sm-debit' href='#sm-debit'>VER MAS</a>
         </div>
       </div>
 
@@ -53,7 +95,7 @@
           <img class='payments__creditPictureImage' src='images/card-white.png'>
           <p class='payments__creditPictureText'>CRÉDITO</p>
         </div>
-        <a class='payments__creditSee-more' href='#'>VER MÁS</a>
+        <a class='payments__creditSee-more' id='sm-credit' href='#sm-credit'>VER MÁS</a>
       </div>
 
       <div class='payments__section'>
@@ -63,10 +105,11 @@
           <img class='payments__valesPictureImage' src='images/vales-white.png'>
           <p class='payments__valesPictureText'>SERVIVALES</p>
         </div>
-        <a class='payments__valesSee-more' href='#'>VER MÁS</a>
+        <a class='payments__valesSee-more' id='sm-vales' href='#sm-vales'>VER MÁS</a>
       </div>
     </article>
   </main>
 
+  <script src='javascript/all.js' async defer>
 </body>
 </html>
