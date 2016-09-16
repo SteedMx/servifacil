@@ -1,6 +1,4 @@
 .payments
-  background-image url(../images/gradient-bg.png)
-
   &__container
     margin 0 auto
     padding 2rem
@@ -14,25 +12,25 @@
 
   &__splash
     display block
-    margin 0 auto
+    margin 4rem auto 0 auto
     padding 0
-    width 60%
+    width 1000px
 
   &__text-debt
     color white
     font-size 1.1rem
-    left 310px
+    left 260px
     position absolute
     text-align center
-    top 110px
+    top 180px
     width 300px
 
   &__picture-debt
     display inline-block
     height 70px
-    left 830px
+    left 930px
     position relative
-    top -400px
+    top -550px
 
     &Image
       height 60px
@@ -43,7 +41,7 @@
       text-align center
 
   &__see-debt
-    bottom -120px
+    bottom -210px
     color white
     display inline-block
     font-weight bold
@@ -60,22 +58,22 @@
     margin 0 auto
     position relative
     transform rotate(180deg)
-    width 60%
+    width 1000px
 
     &Text
       color white
       font-size 1.1rem
-      left 560px
+      left 620px
       position absolute
       text-align center
-      top 150px
-      width 350px
+      top 200px
+      width 345px
 
     &Picture
       display inline-block
-      left 270px
+      left 170px
       position absolute
-      top 310px
+      top 455px
 
       &Image
         height 70px
@@ -88,10 +86,10 @@
     &See-more
       color white
       font-weight bold
-      left 310px
+      left 210px
       position absolute
       text-decoration none
-      top 153px
+      top 210px
 
       &:hover
         text-decoration underline
@@ -100,23 +98,23 @@
     display block
     margin 0 auto
     position relative
-    width 60%
+    width 1000px
 
     &Text
       color white
       font-size 1.1rem
-      left 300px
+      left 250px
       position absolute
       text-align center
-      top 245px
+      top 305px
       width 320px
 
     &Picture
       display inline-block
-      left 820px
+      left 930px
       position absolute
       text-align center
-      top 160px
+      top 190px
 
       &Image
         height 70px
@@ -127,11 +125,11 @@
         font-weight bold
 
     &See-more
-      bottom 145px
+      bottom 205px
       color white
       font-weight bold
       position absolute
-      right 310px
+      right 205px
       text-decoration none
 
       &:hover
@@ -140,10 +138,9 @@
   &__modalDebit
   &__modalCredit
   &__modalVales
-    transition all 0.25s ease
+    background-color rgba(220, 220, 220, 0.8)
 
     &[data-active='true']
-      background-color rgba(180, 180, 180, 0.9)
       height auto
       left 0
       min-height 100%
@@ -156,14 +153,19 @@
       display none
 
     &Container
-      background-color rgb(250, 250, 250)
+      background-color #2b285f
       border-radius 0.35rem
       box-sizing border-box
+      color white
       height 50vh
       margin 10vh auto 0 auto
       padding 2rem
+      position relative
       overflow scroll
-      width 600px
+      width 800px
+
+    &Box
+      width 550px
 
   &__modalCredit
     &[data-active='false']
