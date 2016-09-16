@@ -90,14 +90,16 @@
         <p class='services__text'>En Servifácil ofrecemos combustibles con estándares de calidad a nivel nacional y tiendas de conveniencia de renombre. Así mismo, atendemos las necesidades especificas de nuestros clientes, brindándoles propuestas integrales de valor, compuestas por productos, servicios, instalaciones y diversas opciones de pago (crédito, débito, vales y monederos electónicos).</p>
         <p class='services__text'>Servifácil invierte, investiga, capacita y pone en marcha proyectos corporativos para mantener un ritmo sostenido de avance en la calidad de sus servicios. Com empresa lider en el segmento de estaciones de servicio trabajamos todos los días más por ti.</p>
 
-        <div class='services__segment'>
-          <h4 class='services__segmentText'>GASOLINAS</h4>
-        </div>
-        <div class='services__segment'>
-          <h4 class='services__segmentText'>FACTURACIÓN</h4>
-        </div>
-        <div class='services__segment'>
-          <h4 class='services__segmentText'>LIMPIEZA Y CALIBRACIÓN</h4>
+        <div class='services__list'>
+          <div class='services__segment' id='gas'>
+            <h4 class='services__segmentText'>GASOLINAS</h4>
+          </div>
+          <div class='services__segment' id='fact'>
+            <h4 class='services__segmentText'>FACTURACIÓN</h4>
+          </div>
+          <div class='services__segment' id='clean'>
+            <h4 class='services__segmentText'>LIMPIEZA Y CALIBRACIÓN</h4>
+          </div>
         </div>
       </div>
     </article>
@@ -146,10 +148,10 @@
               Domingos de 7:00 a 14:00 horas.<br>
             </strong>
           </p>
-          <p>
+          <p class='footer__text'>
             <strong>Celular: 921 240 9834</strong>
           </p>
-          <p>
+          <p class='footer__text'>
             <strong>Escribenos a: comunicaciones@servifacil.com.mx</strong>
           </p>
         </div>
@@ -158,6 +160,7 @@
             <input class='footer__input' type='text' name='name' placeholder='Nombre'>
             <input class='footer__input' type='text' name='email' placeholder='Email'>
             <textarea class='footer__textarea' name='message' placeholder='Mensaje'></textarea>
+            <input class='footer__submit' type='submit'>
           </form>
         </div>
 
