@@ -728,7 +728,7 @@ body {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 }
 .modal[data-active='false'] {
   display: none;
@@ -738,11 +738,11 @@ body {
   border-radius: 0.35rem;
   box-sizing: border-box;
   color: #fff;
-  height: 50vh;
-  margin: 10vh auto 0 auto;
+  height: 80vh;
+  margin: 4rem auto 0 auto;
   padding: 2rem;
   position: relative;
-  overflow: scroll;
+  overflow: auto;
   width: 800px;
 }
 .modal__box {
