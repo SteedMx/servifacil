@@ -77,8 +77,15 @@ gulp.task('debug:css', function () {
 
 gulp.task('debug:html', function () {
   gulp.src('src/*.html')
-    .pipe(gulp.dest('build'));
-});
+    .pipe(gulp.dest('build'))
+})
+
+
+gulp.task('debug:fonts', function () {
+    gulp
+      .src('src/fonts/**/*.*')
+      .pipe(gulp.dest('build/fonts/'))
+})
 
 /*!
  * Production tasks
@@ -134,8 +141,14 @@ gulp.task('dist:html', function () {
     .pipe(htmlmin({
       collapseWhitespace: true
     }))
-    .pipe(gulp.dest('build'));
-});
+    .pipe(gulp.dest('build'))
+})
+
+gulp.task('dist:fonts', function () {
+    gulp
+      .src('src/fonts/**/*.*')
+      .pipe(gulp.dest('build/fonts/'))
+})
 
 /*!
  * Github tasks
@@ -183,17 +196,23 @@ gulp.task('gh:css', function () {
       'include css': true,
       user: [autoprefixer()]
     }))
-    .pipe(gulp.dest('docs/css'));
-});
+    .pipe(gulp.dest('docs/css'))
+})
 
 gulp.task('gh:html', function () {
   gulp.src('src/*.html')
     .pipe(htmlmin({
       collapseWhitespace: true
     }))
-    .pipe(gulp.dest('docs'));
-});
+    .pipe(gulp.dest('docs'))
+})
 
-gulp.task('default', ['server', 'debug:javascript', 'debug:css', 'debug:html', 'debug:images', 'watch']);
-gulp.task('github', ['gh:javascript', 'gh:images', 'gh:css', 'gh:html'])
-gulp.task('build', ['dist:javascript', 'dist:css', 'dist:html', 'dist:images']);
+gulp.task('gh:fonts', function () {
+    gulp
+      .src('src/fonts/**/*.*')
+      .pipe(gulp.dest('docs/fonts/'))
+})
+
+gulp.task('default', ['server', 'debug:javascript', 'debug:css', 'debug:html', 'debug:images', 'debug:fonts', 'watch']);
+gulp.task('github', ['gh:javascript', 'gh:images', 'gh:css', 'gh:html', 'gh:fonts'])
+gulp.task('build', ['dist:javascript', 'dist:css', 'dist:html', 'dist:images', 'dist:fonts']);
