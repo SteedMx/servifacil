@@ -1241,6 +1241,7 @@ body {
 .us__title {
   border-bottom: 4px solid #c33;
   display: inline-block;
+  font-size: 2rem;
   margin: 2rem auto;
 }
 .us__sections {
@@ -1260,11 +1261,14 @@ body {
 .us__sectionLabel {
   color: #c33;
 }
+.us__sectionDescription {
+  margin: 1rem;
+}
 .us__sectionText {
   padding: 2.5rem;
   background-image: url("../images/see-more.png");
   display: block;
-  background-position: 113px 9px;
+  background-position: 164px 9px;
   background-repeat: no-repeat;
   color: #fff;
   font-weight: bold;
