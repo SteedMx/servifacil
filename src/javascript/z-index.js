@@ -34,3 +34,39 @@ qsModal.addEventListener('click', function () {
   qsModal.dataset.active = 'false'
 })
 
+var gasLink = document.querySelector('#gas')
+var gasModal = document.querySelector('#ser-gas')
+
+gasLink.addEventListener('click', function (event) {
+  event.preventDefault()
+  gasModal.dataset.active = 'true'
+})
+
+gasModal.addEventListener('click', function () {
+  gasModal.dataset.active = 'false'
+})
+
+var factLink = document.querySelector('#fact')
+var factModal = document.querySelector('#ser-fact')
+
+factLink.addEventListener('click', function (event) {
+  event.preventDefault()
+  factModal.dataset.active = 'true'
+})
+
+factModal.addEventListener('click', function () {
+  factModal.dataset.active = 'false'
+})
+
+var limpLink = document.querySelector('#limp')
+var limpModal = document.querySelector('#ser-limp')
+
+limpLink.addEventListener('click', function (event) {
+  event.preventDefault()
+  limpModal.dataset.active = 'true'
+})
+
+limpModal.addEventListener('click', function () {
+  limpModal.dataset.active = 'false'
+})
+
