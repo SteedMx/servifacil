@@ -1,0 +1,48 @@
+.modal
+  background-color rgba(220, 220, 220, 0.8)
+
+  &[data-active='true']
+    height auto
+    left 0
+    min-height 100%
+    position fixed
+    right 0
+    top 0
+    z-index 10
+
+  &[data-active='false']
+    display none
+
+  &__container
+    background-color #2b285f
+    border-radius 0.35rem
+    box-sizing border-box
+    color white
+    height 50vh
+    margin 10vh auto 0 auto
+    padding 2rem
+    position relative
+    overflow scroll
+    width 800px
+
+  &__box
+    width 550px
+
+  &__title
+    margin-top 0
+
+  &__link
+    color rgb(250, 250, 250)
+    font-weight bold
+
+  &__backgroundCircle
+    height 150px
+    position absolute
+    right 0
+    top 100px
+
+  &__backgroundWorker
+    height 120px
+    position absolute
+    right 50px
+    top 117px

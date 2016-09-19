@@ -35,9 +35,15 @@ gulp.task('watch', function () {
 });
 
 gulp.task('debug:javascript', function () {
-  gulp.src('src/javascript/**/*.js')
-    .pipe(concat('all.js'))
-    .pipe(gulp.dest('build/javascript'));
+  gulp
+    .src(['src/javascript/jquery.js', 'src/javascript/z-hamburguer.js', 'src/javascript/z-index.js'])
+    .pipe(concat('index.js'))
+    .pipe(gulp.dest('build/javascript'))
+
+  gulp
+    .src(['src/javascript/jquery.js', 'src/z-modal.js'])
+    .pipe(concat('metodos.js'))
+    .pipe(gulp.dest('build/javascript'))
 });
 
 gulp.task('debug:images', function () {
@@ -66,10 +72,17 @@ gulp.task('debug:html', function () {
  */
 
 gulp.task('dist:javascript', function () {
-  gulp.src('src/javascript/*.js')
-    .pipe(concat('all.js'))
+  gulp
+    .src(['src/javascript/jquery.js', 'src/javascript/z-hamburguer.js', 'src/javascript/z-index.js'])
+    .pipe(concat('index.js'))
+    .concat(uglify())
+    .pipe(gulp.dest('build/javascript'))
+
+  gulp
+    .src(['src/javascript/jquery.js', 'src/z-modal.js'])
+    .pipe(concat('metodos.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('build/javascript'));
+    .pipe(gulp.dest('build/javascript'))
 });
 
 gulp.task('dist:images', function () {
@@ -115,10 +128,17 @@ gulp.task('clean', function () {
  */
 
 gulp.task('gh:javascript', function () {
-  gulp.src('src/javascript/*.js')
-    .pipe(concat('all.js'))
+  gulp
+    .src(['src/javascript/jquery.js', 'src/javascript/z-hamburguer.js', 'src/javascript/z-index.js'])
+    .pipe(concat('index.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('docs/javascript'));
+    .pipe(gulp.dest('build/javascript'))
+
+  gulp
+    .src(['src/javascript/jquery.js', 'src/z-modal.js'])
+    .pipe(concat('metodos.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('build/javascript'))
 });
 
 gulp.task('gh:images', function () {
