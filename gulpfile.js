@@ -94,7 +94,7 @@ gulp.task('dist:javascript', function () {
       'src/javascript/z-carousel.js'
     ])
     .pipe(concat('index.js'))
-    .concat(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('build/javascript'))
 
   gulp
@@ -115,7 +115,7 @@ gulp.task('dist:images', function () {
       progressive: true,
       interlaced: true
     }))
-    .pipe(gulp.dest('build/images'));
+    .pipe(gulp.dest('build/images/'));
 });
 
 gulp.task('dist:css', function () {
@@ -136,14 +136,6 @@ gulp.task('dist:html', function () {
     }))
     .pipe(gulp.dest('build'));
 });
-
-gulp.task('clean', function () {
-  del.sync('src')
-
-  gulp
-    .src('build/*')
-    .pipe(gulp.dest('./'))
-})
 
 /*!
  * Github tasks
@@ -204,4 +196,4 @@ gulp.task('gh:html', function () {
 
 gulp.task('default', ['server', 'debug:javascript', 'debug:css', 'debug:html', 'debug:images', 'watch']);
 gulp.task('github', ['gh:javascript', 'gh:images', 'gh:css', 'gh:html'])
-gulp.task('build', ['dist:javascript', 'dist:css', 'dist:html', 'dist:images', 'clean']);
+gulp.task('build', ['dist:javascript', 'dist:css', 'dist:html', 'dist:images']);
