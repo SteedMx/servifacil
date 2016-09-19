@@ -41,6 +41,31 @@
       margin 0
       padding 2rem
 
+  @media all and (max-width 850px)
+    &__container
+      padding-bottom 0
+      width 100%
+
+    &__text
+      font-size 1rem
+      margin 1rem 2rem
+
+    &__list
+      display block
+      padding 0
+
+    &__segment
+      margin 0
+      width 100%
+
+  @media all and (min-width 851px) and (max-width 1200px)
+    &__container
+      width 100%
+
+  @media all and (min-width 1201px)
+    &__container
+      width 1200px
+
 #fact
   background-image url(../images/gradient-bg.png),
                    url(../images/writing.jpg)

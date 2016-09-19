@@ -50,6 +50,36 @@
     height 100%
     padding 2rem
 
+  @media all and (max-width 780px)
+    &__container
+      padding-bottom 0
+      width 100%
+
+    &__text
+      margin 1rem
+
+    &__sections
+      display block
+      width 100%
+
+    &__section
+      display block
+      width 100%
+
+      &:last-child
+        margin-top 0
+
+  @media all and (min-width 781px) and (max-width 1200px)
+    &__container
+      width 100%
+
+    &__section
+      width 50%
+
+  @media all and (min-width 1201px)
+    &__container
+      width 1200px
+
 #product-crew
   background-image url(../images/servivales-blur.png)
   background-size cover
