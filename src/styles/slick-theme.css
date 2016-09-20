@@ -118,6 +118,13 @@
     font-size: 2rem;
 }
 
+@media all and (max-width: 800px) {
+  .slick-next,
+  .slick-prev {
+    display: none;
+  }
+}
+
 /* Dots */
 .slick-dotted.slick-slider
 {

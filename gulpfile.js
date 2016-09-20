@@ -29,9 +29,9 @@ gulp.task('server', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('src/styles/**/*.styl', ['debug:css']);
-  gulp.watch('src/javascript/**/*.js', ['debug:javascript'])
-  gulp.watch('src/*.html', ['debug:html']);
+  gulp.watch('src/styles/**/*.*', ['debug:css']);
+  gulp.watch('src/javascript/**/*.*', ['debug:javascript'])
+  gulp.watch('src/*.*', ['debug:html']);
 });
 
 gulp.task('debug:javascript', function () {

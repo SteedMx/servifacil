@@ -5,4 +5,11 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1
   })
+
+  $('.services__list').slick({
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1
+  })
 })

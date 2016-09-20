@@ -503,7 +503,15 @@ textarea {
 
     height: 100%;
     min-height: 1px;
+    margin: 1rem;
 }
+
+@media all and (max-width: 500px) {
+  .slick-slide {
+    margin: 0.5rem;
+  }
+}
+
 [dir='rtl'] .slick-slide
 {
     float: right;
@@ -658,6 +666,13 @@ textarea {
 {
     content: '←';
     font-size: 2rem;
+}
+
+@media all and (max-width: 800px) {
+  .slick-next,
+  .slick-prev {
+    display: none;
+  }
 }
 
 /* Dots */
@@ -969,6 +984,15 @@ body {
 .mosaic__image {
   max-width: 100%;
 }
+@media all and (max-width: 800px) {
+  .mosaic__box {
+    display: block;
+  }
+  .mosaic__item {
+    display: block;
+    margin: 1rem auto;
+  }
+}
 @media all and (min-width: 1201px) {
   .mosaic__container {
     width: 1200px;
@@ -1005,7 +1029,7 @@ body {
 .services__segment {
   box-sizing: border-box;
   display: inline-block;
-  margin: 2rem auto 0 auto;
+  margin: 0 auto;
   padding: 6rem 0;
   text-align: center;
   width: 33%;
@@ -1050,11 +1074,13 @@ body {
   background-position: center center;
   background-size: cover;
 }
+#provee,
 #limp {
   background-image: url("../images/gradient-bg.png"), url("../images/clean.png");
   background-position: center center;
   background-size: cover;
 }
+#servipits,
 #gas {
   background-image: url("../images/gradient-bg.png"), url("../images/gas.png");
   background-position: center center;
@@ -1300,6 +1326,22 @@ body {
   background-size: contain;
   font-size: 0.7rem;
 }
+@media all and (max-width: 800px) {
+  .us__sectionLabel {
+    margin: 0.5rem;
+    padding: 0;
+  }
+  .us__sectionDescription {
+    display: none;
+  }
+  .us__sectionText {
+    background: none;
+    color: #000;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+  }
+}
 @media all and (max-width: 1200px) {
   .us__container {
     width: 100%;
@@ -1400,7 +1442,7 @@ body {
   box-sizing: border-box;
   margin: 0.5rem 1%;
   padding: 0.5rem;
-  text-align: center;
+  text-align: left;
   vertical-align: top;
   width: 45%;
 }
@@ -1412,6 +1454,8 @@ body {
   background-color: #c33;
   color: #fff;
   font-weight: bold;
+  text-align: center;
+  width: 92%;
 }
 #map {
   height: 500px;
