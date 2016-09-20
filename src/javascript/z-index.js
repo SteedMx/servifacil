@@ -14,6 +14,7 @@ var historyLink = document.querySelector('#h-link')
 var historyModal = document.querySelector('#h-modal')
 
 historyLink.addEventListener('click', function (event) {
+  console.log('clicking')
   event.preventDefault()
   historyModal.dataset.active = 'true'
 })
@@ -121,5 +122,17 @@ spitsLink.addEventListener('click', function (event) {
 
 spitsModal.addEventListener('click', function () {
   spitsModal.dataset.active = 'false'
+})
+
+var rsLink = document.querySelector('#rs')
+var rsModal = document.querySelector('#rs-modal')
+
+rsLink.addEventListener('click', function (event) {
+  event.preventDefault()
+  rsModal.dataset.active = 'true'
+})
+
+rsModal.addEventListener('click', function () {
+  rsModal.dataset.active = 'false'
 })
 
