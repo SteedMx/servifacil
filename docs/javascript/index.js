@@ -141,6 +141,30 @@ mclose.addEventListener('click', function () {
   mfactModal.dataset.active = 'false'
 })
 
+var sprovLink = document.querySelector('#provee')
+var sprovModal = document.querySelector('#sprov-modal')
+
+sprovLink.addEventListener('click', function (event) {
+  event.preventDefault()
+  sprovModal.dataset.active = 'true'
+})
+
+sprovModal.addEventListener('click', function () {
+  sprovModal.dataset.active = 'false'
+})
+
+var spitsLink = document.querySelector('#spits')
+var spitsModal = document.querySelector('#spits-modal')
+
+spitsLink.addEventListener('click', function (event) {
+  event.preventDefault()
+  spitsModal.dataset.active = 'true'
+})
+
+spitsModal.addEventListener('click', function () {
+  spitsModal.dataset.active = 'false'
+})
+
 
 /*
      _ _      _       _

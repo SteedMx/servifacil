@@ -823,6 +823,9 @@ body {
   text-align: center;
   width: 92%;
 }
+.modal__text {
+  margin: 0;
+}
 #map {
   height: 500px;
 }

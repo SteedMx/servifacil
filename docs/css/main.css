@@ -1034,6 +1034,9 @@ body {
   text-align: center;
   width: 33%;
 }
+.services__segment:hover {
+  cursor: pointer;
+}
 .services__segmentText {
   border: 2px solid #fff;
   color: #fff;
@@ -1074,13 +1077,21 @@ body {
   background-position: center center;
   background-size: cover;
 }
-#provee,
+#provee {
+  background-image: url("../images/gradient-bg.png"), url("../images/clean.png");
+  background-position: center center;
+  background-size: cover;
+}
 #limp {
   background-image: url("../images/gradient-bg.png"), url("../images/clean.png");
   background-position: center center;
   background-size: cover;
 }
-#servipits,
+#servipits {
+  background-image: url("../images/gradient-bg.png"), url("../images/writing.jpg");
+  background-position: center center;
+  background-size: cover;
+}
 #gas {
   background-image: url("../images/gradient-bg.png"), url("../images/gas.png");
   background-position: center center;
@@ -1315,16 +1326,11 @@ body {
   margin: 1rem;
 }
 .us__sectionText {
-  padding: 2.5rem;
-  background-image: url("../images/see-more.png");
+  color: #282828;
   display: block;
-  background-position: 164px 9px;
-  background-repeat: no-repeat;
-  color: #fff;
   font-weight: bold;
   text-decoration: none;
-  background-size: contain;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 @media all and (max-width: 800px) {
   .us__sectionLabel {
@@ -1456,6 +1462,9 @@ body {
   font-weight: bold;
   text-align: center;
   width: 92%;
+}
+.modal__text {
+  margin: 0;
 }
 #map {
   height: 500px;
