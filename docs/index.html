@@ -11,6 +11,18 @@
 <body>
 
   <main id='root'>
+    <div class='modal' id='mgas-modal' data-active='false'>
+      <div class='modal__container'>
+        <header class='modal__header'>
+          <h2 class='modal__title'>GASOLINERAS</h2>
+          <button class='modal__close' id='close'>CERRAR</button>
+        </header>
+
+        <div id='map'>
+        </div>
+      </div>
+    </div>
+
     <div class='modal' id='qs-modal' data-active='false'>
       <div class='modal__container'>
         <img class='modal__backgroundOrange' src='images/half-orange.png'>
@@ -261,18 +273,18 @@
         </div>
 
         <div class='mosaic__box'>
-          <div class='mosaic__item'>
+          <a class='mosaic__item' href='#' id='mgas'>
             <h3 class='mosaic__title'>GASOLINERAS</h3>
             <img class='mosaic__image' src='images/hero-background.jpg'>
-          </div>
-          <a href='metodos.html' class='mosaic__item'>
+          </a>
+          <a class='mosaic__item' href='metodos.html'>
             <h3 class='mosaic__title'>FORMAS DE PAGO</h3>
             <img class='mosaic__image' src='images/hero-background.jpg'>
           </a>
-          <div class='mosaic__item'>
+          <a class='mosaic__item' href='#'>
             <h3 class='mosaic__title'>FACTURACIÓN</h3>
             <img class='mosaic__image' src='images/hero-background.jpg'>
-          </div>
+          </a>
         </div>
       </div>
     </article>
@@ -408,5 +420,19 @@
   </main>
 
   <script async defer src='javascript/index.js'></script>
+  <script>
+    function initMap() {
+      // Create a map object and specify the DOM element for display.
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+          lat: 0,
+          lng: 0
+        },
+        scrollwheel: true,
+        zoom: 5
+      });
+    }
+  </script>
+  <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDkAzNwyVOO-eiYaKszYkUuAaQN3Y9ttfA&callback=initMap'></script>
 </body>
 </html>

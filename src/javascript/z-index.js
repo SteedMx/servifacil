@@ -70,3 +70,19 @@ limpModal.addEventListener('click', function () {
   limpModal.dataset.active = 'false'
 })
 
+var mgasLink = document.querySelector('#mgas')
+var mgasModal = document.querySelector('#mgas-modal')
+var close = document.querySelector('#close')
+
+mgasLink.addEventListener('click', function (event) {
+  event.preventDefault()
+  setTimeout(function () {
+    initMap()
+  }, 1000)
+  mgasModal.dataset.active = 'true'
+})
+
+close.addEventListener('click', function () {
+  mgasModal.dataset.active = 'false'
+})
+
