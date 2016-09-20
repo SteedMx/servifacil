@@ -748,8 +748,8 @@ body {
 }
 .modal__close {
   background-color: transparent;
-  border: 2px solid #c33;
-  color: #c33;
+  border: 2px solid #fff;
+  color: #fff;
   display: inline-block;
   font-size: 0.8rem;
   padding: 0.35rem 1rem;
