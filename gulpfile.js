@@ -72,7 +72,11 @@ gulp.task('debug:css', function () {
       compress: false,
       'include css': true
     }))
-    .pipe(gulp.dest('build/css'));
+    .pipe(gulp.dest('build/css'))
+
+  gulp
+    .src('src/styles/fonts/**/*.*')
+    .pipe(gup.dest('build/css/fonts'))
 });
 
 gulp.task('debug:html', function () {

@@ -1,5 +1,4 @@
 .nav
-  background-color #c33
   display none
   font-family 'Flama Basic'
   font-weight bold
@@ -9,6 +8,12 @@
   left 0
   right 0
   z-index 50
+
+  &[data-transparent='true']
+    background-color rgba(204, 51, 51, 0)
+
+  &[data-transparent='false']
+    background-color rgba(204, 51, 51, 1)
 
   &__container
     box-sizing border-box
