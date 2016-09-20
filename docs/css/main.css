@@ -1385,6 +1385,28 @@ body {
   top: 10px;
   right: 0;
 }
+.modal__form {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.modal__input,
+.modal__textarea,
+.modal__select,
+.modal__submit {
+  border: none;
+  border-radius: 0.25rem;
+  display: block;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+.modal__submit {
+  background-color: #c33;
+  color: #fff;
+  font-weight: bold;
+}
 #map {
   height: 500px;
 }

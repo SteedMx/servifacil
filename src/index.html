@@ -23,6 +23,52 @@
       </div>
     </div>
 
+    <div class='modal' id='mfact-modal' data-active='false'>
+      <div class='modal__container'>
+        <img class='modal__backgroundOrange' src='images/half-orange.png'>
+        <img class='modal__backgroundCircle' src='images/half-red.png' />
+        <img class='modal__backgroundWorker' src='images/worker.png' />
+
+        <div class='modal__box'>
+          <header class='modal__header'>
+            <h2 class='modal__title'>FACTURACION</h2>
+            <button class='modal__close' id='mclose'>CERRAR</button>
+          </header>
+          <form class='modal__form'>
+            <input class='modal__input' placeholder='Folio del ticket de carga' type='text'>
+            <input class='modal__input' placeholder='Importe exacto de la carga' type='text'>
+            <select class='modal__select'>
+              <option default>Forma de pago utilizada</option>
+              <option>Tarjeta de debito</option>
+              <option>Tarjeta de credito</option>
+              <option>Efectivo</option>
+              <option>Monedero electronico</option>
+              <option>Tranferencia electronica de fondos</option>
+              <option>Deposito en cuenta</option>
+            </select>
+            <select class='modal__select'>
+              <option default>Estacion de servicio</option>
+            </select>
+            <input class='modal__input' placeholder='Últimos cuadro dígitos de forma de pago' type='text'>
+            <input class='modal__input' placeholder='Fecha del ticket' type='text'>
+            <input class='modal__input' placeholder='Nombre o razón social' type='text'>
+            <input class='modal__input' placeholder='Domicilio fiscal' type='text'>
+            <input class='modal__input' placeholder='Colonia' type='text'>
+            <input class='modal__input' placeholder='Ciudad' type='text'>
+            <select class='modal__select'>
+              <option default>Estado</option>
+            </select>
+            <input class='modal__input' placeholder='RFC' type='text'>
+            <input class='modal__input' placeholder='Código postal' type='text'>
+            <input class='modal__input' placeholder='Correo electrónico' type='email'>
+            <input class='modal__input' placeholder='Teléfono' type='text'>
+            <textarea class='modal__textarea' placeholder='Comentarios'></textarea>
+            <input class='modal__submit' value='Enviar' type='submit'>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <div class='modal' id='qs-modal' data-active='false'>
       <div class='modal__container'>
         <img class='modal__backgroundOrange' src='images/half-orange.png'>
@@ -281,7 +327,7 @@
             <h3 class='mosaic__title'>FORMAS DE PAGO</h3>
             <img class='mosaic__image' src='images/hero-background.jpg'>
           </a>
-          <a class='mosaic__item' href='#'>
+          <a class='mosaic__item' href='#' id='mfact'>
             <h3 class='mosaic__title'>FACTURACIÓN</h3>
             <img class='mosaic__image' src='images/hero-background.jpg'>
           </a>
