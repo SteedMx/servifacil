@@ -569,8 +569,8 @@ textarea {
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 60px;
+    height: 60px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -582,6 +582,7 @@ textarea {
     border: none;
     outline: none;
     background: transparent;
+    background-size: contain;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -621,7 +622,7 @@ textarea {
 
 .slick-prev
 {
-    left: -25px;
+    left: -50px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -631,15 +632,17 @@ textarea {
 .slick-prev:before
 {
     content: '←';
+    font-size: 2rem;
 }
 [dir='rtl'] .slick-prev:before
 {
     content: '→';
+    font-size: 2rem;
 }
 
 .slick-next
 {
-    right: -25px;
+    right: -50px;
 }
 [dir='rtl'] .slick-next
 {
@@ -649,10 +652,12 @@ textarea {
 .slick-next:before
 {
     content: '→';
+    font-size: 2rem;
 }
 [dir='rtl'] .slick-next:before
 {
     content: '←';
+    font-size: 2rem;
 }
 
 /* Dots */

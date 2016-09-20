@@ -76,7 +76,7 @@ gulp.task('debug:css', function () {
 
   gulp
     .src('src/styles/fonts/**/*.*')
-    .pipe(gup.dest('build/css/fonts'))
+    .pipe(gulp.dest('build/css/fonts'))
 });
 
 gulp.task('debug:html', function () {
