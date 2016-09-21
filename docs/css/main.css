@@ -1067,12 +1067,16 @@ body {
     margin: 1rem 2rem;
   }
   .services__list {
+    align-items: center;
+    align-content: center;
     display: block;
-    padding: 0;
+    padding: 2rem 0 0 0;
   }
   .services__segment {
     margin: 0;
-    width: 100%;
+  }
+  .services__segmentText {
+    padding: 0.25rem;
   }
 }
 @media all and (min-width: 851px) and (max-width: 1200px) {
