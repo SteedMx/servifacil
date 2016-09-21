@@ -61,3 +61,14 @@ valesModal.addEventListener('click', function (event) {
   }
 })
 
+var $nav = $('.nav')
+
+$(document).scroll(function () {
+  var top = $nav.offset().top
+
+  if (top >= 0 && top <= 50) {
+    $nav.attr('data-fixed', 'false')
+  } else {
+    $nav.attr('data-fixed', 'true')
+  }
+})

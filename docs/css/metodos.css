@@ -489,7 +489,7 @@ body {
   }
   .hero__title {
     font-size: 1.5rem;
-    margin: 2rem;
+    margin: 4rem 2rem 2rem 2rem;
   }
   .hero__section {
     clear: both;
@@ -502,6 +502,17 @@ body {
     color: #fff;
     font-size: 1.2rem;
     margin: 0 auto;
+    padding: 0;
+  }
+}
+@media all and (min-width: 501px) and (max-width: 850px) {
+  .hero__container {
+    margin: 0;
+    width: 100%;
+  }
+  .hero__title {
+    font-size: 2rem;
+    margin: 4rem 2rem 2rem 2rem;
     padding: 0;
   }
 }
@@ -828,4 +839,24 @@ body {
 }
 #map {
   height: 500px;
+}
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  transition: all 0.25s ease;
+}
+.nav[data-fixed='true'] {
+  background-color: #c33;
+}
+.nav[data-fixed='false'] {
+  background-color: transparent;
+}
+.nav__logo {
+  display: block;
+  height: 40px;
+  margin: 0.75rem auto;
+  text-align: center;
 }
