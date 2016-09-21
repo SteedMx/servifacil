@@ -780,6 +780,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 50;
 }
 .nav-mobile__logo {
   height: 30px;
@@ -969,20 +970,32 @@ body {
   margin-top: 0;
 }
 .mosaic__title {
-  background-color: #c33;
-  color: #fff;
+  color: #c33;
   display: block;
-  margin: 0;
-  padding: 1rem;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 0;
   text-align: center;
+}
+.mosaic__title:link {
   text-decoration: none;
+}
+.mosaic__title:hover {
+  text-decoration: underline;
 }
 .mosaic__item {
   display: inline-block;
+  text-decoration: none;
   width: 300px;
 }
+.mosaic__picture {
+  margin: 0 auto;
+  text-align: center;
+}
 .mosaic__image {
-  max-width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  text-align: center;
 }
 @media all and (max-width: 800px) {
   .mosaic__box {
@@ -1130,6 +1143,9 @@ body {
   text-align: center;
   vertical-align: top;
   width: 49%;
+}
+.products__section:first-child:hover {
+  cursor: pointer;
 }
 .products__sectionTitle {
   font-size: 2rem;

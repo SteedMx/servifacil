@@ -191,6 +191,19 @@ bolsaModal.addEventListener('click', function () {
   bolsaModal.dataset.active = 'false'
 })
 
+var servivales = document.querySelector('#product-vales')
+var servivalesModal = document.querySelector('#product-vales-modal')
+
+servivales.addEventListener('click', function (event) {
+  event.preventDefault()
+  servivalesModal.dataset.active = 'true'
+})
+
+servivalesModal.addEventListener('click', function () {
+  servivalesModal.dataset.active = 'false'
+})
+
+
 /*
      _ _      _       _
  ___| (_) ___| | __  (_)___
