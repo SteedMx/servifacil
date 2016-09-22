@@ -7,6 +7,7 @@ const pug = require('gulp-pug')
 const concat = require('gulp-concat')
 const uglify = require('gulp-uglify')
 const autoprefixer = require('gulp-autoprefixer')
+const imageop = require('gulp-imagemin')
 
 /*!
  * Development tasks
@@ -117,9 +118,9 @@ gulp.task('dist:javascript', function () {
     .pipe(gulp.dest('public/javascript'))
 })
 
-gulp.task('dist:images', function () {
+gulp.task('dist:images', function (cb) {
   gulp
-    .src(['src/images/**/*.*'])
+    .src('src/images/**/*.')
     .pipe(gulp.dest('public/images/'))
 })
 
@@ -183,8 +184,8 @@ gulp.task('gh:javascript', function () {
 
 gulp.task('gh:images', function () {
   gulp
-    .src(['src/images/**/*.*'])
-    .pipe(gulp.dest('docs/images'))
+    .src('src/images/**/*.*')
+    .pipe(gulp.dest('public/images/'))
 })
 
 gulp.task('gh:css', function () {
@@ -213,9 +214,9 @@ gulp.task('gh:html', function () {
 })
 
 gulp.task('gh:fonts', function () {
-    gulp
-      .src('src/fonts/**/*.*')
-      .pipe(gulp.dest('docs/fonts/'))
+  gulp
+    .src('src/fonts/**/*.*')
+    .pipe(gulp.dest('docs/fonts/'))
 })
 
 gulp.task('default', ['server', 'debug:javascript', 'debug:css', 'debug:html', 'debug:images', 'debug:fonts', 'watch'])
