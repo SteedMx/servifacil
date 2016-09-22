@@ -57,10 +57,6 @@ gulp.task('debug:images', function () {
   gulp
     .src(['src/images/**/*.*'])
     .pipe(gulp.dest('public/images'))
-
-  gulp
-    .src('src/styles/ajax-loader.gif')
-    .pipe(gulp.dest('public/css/'))
 })
 
 gulp.task('debug:css', function () {
@@ -70,8 +66,7 @@ gulp.task('debug:css', function () {
       'src/styles/metodos.styl'
     ])
     .pipe(stylus({
-      compress: false,
-      'include css': true
+      compress: false
     }))
     .pipe(gulp.dest('public/css'))
 })
@@ -93,10 +88,6 @@ gulp.task('debug:fonts', function () {
   gulp
     .src('src/fonts/**/*.*')
     .pipe(gulp.dest('public/fonts/'))
-
-  gulp
-    .src('src/styles/fonts/**/*.*')
-    .pipe(gulp.dest('public/css/fonts'))
 })
 
 /*!
@@ -140,7 +131,6 @@ gulp.task('dist:css', function () {
     ])
     .pipe(stylus({
       compress: true,
-      'include css': true,
       user: [autoprefixer()]
     }))
     .pipe(gulp.dest('public/css'));
@@ -205,7 +195,6 @@ gulp.task('gh:css', function () {
     ])
     .pipe(stylus({
       compress: true,
-      'include css': true,
       user: [autoprefixer()]
     }))
     .pipe(gulp.dest('docs/css'))
@@ -220,7 +209,7 @@ gulp.task('gh:html', function () {
     .pipe(pug({
       pretty: false
     }))
-    .pipe(gulp.dest('public'))
+    .pipe(gulp.dest('docs'))
 })
 
 gulp.task('gh:fonts', function () {
