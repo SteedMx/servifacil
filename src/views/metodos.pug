@@ -135,20 +135,20 @@ html
 
           div(class='hero__float')
             div(class='hero__section')
-              img(class='hero__image', src='images/card.png')
-              p(class='hero__label') CRÉDITO
+              img(class='hero__image' src='images/card.png')
+              a(class='hero__label', href='#debit') DÉBITO
 
             div(class='hero__section')
-              img(class='hero__image' src='images/card.png')
-              p(class='hero__label') DÉBITO
+              img(class='hero__image', src='images/card.png')
+              a(class='hero__label', href='#credit') CRÉDITO
 
             div(class='hero__section')
               img(class='hero__image', src='images/vales.png')
-              p(class='hero__label') SERVIVALES
+              a(class='hero__label', href='#servivales') SERVIVALES
 
       article(class='payments')
         div(class='payments__container')
-          div(class='payments__section')
+          div(class='payments__section', id='debit')
             img(class='payments__splash' src='images/splash.png')
             p(class='payments__text-debt') En este producto se ofrecen todas las ventajas del control automatizado. Su depósito es administrado por el Sistema de Control de Flotillas que va facturando sus consumos en el periodo solicitado y generando saldos actualizados conforme usted realiza sus pagos. El medio para realizar la carga de combustible atraves de tarjeta de débito.
 
@@ -157,7 +157,7 @@ html
               p(class='payments__picture-debtText') DÉBITO
               a(class='payments__see-debt', id='sm-debit', href='#sm-debit') VER MÁS
 
-          div(class='payments__section')
+          div(class='payments__section', id='credit')
             img(class='payments__credit', src='images/splash.png')
             p(class='payments__creditText') Hemos creado además una herramienta util y fléxible, Servifácil Crédito, para apoyar a los empresarios mediante una linea de crédito autorizado, donde puede utilizar el Sistema de Control de Flotillas, y    a sea con tarjetas de banda mágnetica o con códigos de barras.
 
@@ -166,7 +166,7 @@ html
               p(class='payments__creditPictureText') CRÉDITO
             a(class='payments__creditSee-more', id='sm-credit', href='#sm-credit') VER MÁS
 
-          div(class='payments__section')
+          div(class='payments__section', id='servivales')
             img(class='payments__vales', src='images/splash.png')
             p(class='payments__valesText') Cargue, administre y controle su combustible mediante una solución práctica, fléxible y cómoda. Los Servivales pueden ser utilizados para el consumo de gasolinas, diésel y lubricantes, mediante un sofisticado sistema de vales nominales por cantidades especificadas que usted elegir de acuerdo con sus necesidades.
             div(class='payments__valesPicture')

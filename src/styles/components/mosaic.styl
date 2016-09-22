@@ -52,12 +52,19 @@
     text-align center
 
   @media all and (max-width 800px)
+    &__container
+      width 50%
+
     &__box
       display block
 
     &__item
       display block
       margin 1rem auto
+
+  @media all and (min-width 801px) and (max-width 1200px)
+    &__container
+      width 50%
 
   @media all and (min-width 1201px)
     &__container
