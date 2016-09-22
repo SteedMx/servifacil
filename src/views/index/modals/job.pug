@@ -54,46 +54,39 @@ div(class='modal', id='bolsa-modal', data-active='false')
       p Con nuestra Bolsa de Trabajo buscamos crear un medio de enlace entre tus habilidades y experiencia con nuestras oportunidades laborales. Por eso te invitamos a enviarnos tus datos y nosotros nos comunicaremos contigo en cuanto haya un puesto que cubra tus habilidades.
 
       form(class='modal__form')
-        input(class='modal__input', placeholder='Nombre completo', type='text')
-        input(class='modal__input', placeholder='Edad', type='text')
+        input(class='modal__input', name='name', placeholder='Nombre completo', type='text')
+        input(class='modal__input', name='age',placeholder='Edad', type='text')
 
-        div(class='modal__block')
-          Sexo
-          input(type='radio', value='h')
-          | Hombre
-          input(type='radio', value='m')
-          |  Mujer
+        select(class='modal__select', name='sex')
+          option(default='true', value-'') Sexo
+          option(value='hombre') Hombre
+          option(value='mujer') Mujer
 
-        input(class='modal__input', placeholder='Ciudad', type='text')
-        input(class='modal__input', placeholder='Estado')
-        input(class='modal__input', placeholder='Teléfono')
-        input(class='modal__input', placeholder='Célular')
-        input(class='modal__input', placeholder='Email')
-        input(class='modal__input', placeholder='Vacante deseada')
-        input(class='modal__input', placeholder='Sueldo mensual deseado')
+        input(class='modal__input', name='city' placeholder='Ciudad', type='text')
+        input(class='modal__input', name='state', placeholder='Estado')
+        input(class='modal__input', name='telephone', placeholder='Teléfono')
+        input(class='modal__input', name='cellular', placeholder='Célular')
+        input(class='modal__input', name='email' placeholder='Email')
+        input(class='modal__input', name='position' placeholder='Vacante deseada')
+        input(class='modal__input', name='wage', placeholder='Sueldo mensual deseado')
 
-        select(class='modal__select')
-          option Primaria
-          option Secundaria
-          option Preparatoria
-          option Carrera técnica
-          option Universidad
-          option Postgrado
+        select(class='modal__select', name='school')
+          option(value='primaria') Primaria
+          option(value='secundaria') Secundaria
+          option(value='preparatoria') Preparatoria
+          option(value='tecnico') Carrera técnica
+          option(value='universidad') Universidad
+          option(value='postgrado') Postgrado
 
-        div(class='modal__block')
-          | ¿Tiene disponibilidad de horario?
-          input(type='radio')
-          |  Si
-          input(type='radio')
-          | No
+        select(class='modal__select', name='schedule')
+          option(default='true', value='') ¿Tiene disponibilidad de horario?
+          option(value='si') Si
+          option(value='no') No
 
-        div(class='modal__block')
-          | ¿Tiene disponibilidad para viajar?
-          input(type='radio')
-          | Si
-          input(type='radio')
-          | No
+        select(class='modal__select', name='travel')
+          option(default='true', value='') ¿Tiene disponibilidad para viajar?
+          option(value='si') Si
+          option(value='no') No
 
-        textarea(class='modal__textarea', plaecholder='Comentarios')
+        textarea(class='modal__textarea', name='comments', plaecholder='Comentarios')
         input(type='submit', class='modal__submit')
-

@@ -5,13 +5,13 @@ const logger = require('morgan')
 const BodyParser = require('body-parser')
 const compression = require('compression')
 const cors = require('cors')
-const Mandrill = require('mandrill-api/mandrill')
-
 const resolve = require('path').resolve
+
+const Message = require('./lib/message')
+const Mandrill = require('./lib/mandrill')
 
 const app = express()
 const files = () => express.static(resolve(__dirname, 'public'))
-const mandrillClient = new Mandrill.Mandrill(process.env.MANDRIL_API_KEY)
 
 if (process.env.NODE_ENV === 'development') {
   app.use(cors())
@@ -33,28 +33,22 @@ app.get(/metodos(.html)?$/, (req, res) => {
 
 app.post(/\/contact$/, (req, res) => {
   const body = req.body
+  const msg = Message.contact(body)
 
-  const message = {
-    html: body.message,
-    subject: body.subject,
-    from_email: body.email,
-    from_name: body.name,
-    to: [{
-      email: 'michell@steed.mx',
-      name: 'Michell Ayala',
-      type: 'to'
-    }]
-  }
+  Mandrill
+    .sendEmail(msg)
+    .then((status) => res.status(201).json(status))
+    .catch((err) => res.status(500).json(err))
+})
 
-  mandrillClient
-    .messages
-    .send({ message },
-    function (result) {
-      return res.status(201).send({ status: 'sent' })
-    },
-    function (err) {
-      return res.status(500).send(err)
-    })
+app.post(/\/cv$/, (req, res) => {
+  const body = req.body
+  const msg = Message.cv(body)
+
+  Mandrill
+    .sendEmail(msg)
+    .then((status) => res.status(200).json(status))
+    .catch((err) => res.status(500).json(err))
 })
 
 if (!module.parent) {
