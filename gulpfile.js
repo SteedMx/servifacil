@@ -73,10 +73,6 @@ gulp.task('debug:css', function () {
       'include css': true
     }))
     .pipe(gulp.dest('public/css'))
-
-  gulp
-    .src('src/styles/fonts/**/*.*')
-    .pipe(gulp.dest('public/css/fonts'))
 });
 
 gulp.task('debug:html', function () {
@@ -86,9 +82,13 @@ gulp.task('debug:html', function () {
 
 
 gulp.task('debug:fonts', function () {
-    gulp
-      .src('src/fonts/**/*.*')
-      .pipe(gulp.dest('public/fonts/'))
+  gulp
+    .src('src/fonts/**/*.*')
+    .pipe(gulp.dest('public/fonts/'))
+
+  gulp
+    .src('src/styles/fonts/**/*.*')
+    .pipe(gulp.dest('public/css/fonts'))
 })
 
 /*!
