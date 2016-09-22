@@ -108,11 +108,9 @@
 
     <div class='modal' id='mfact-modal' data-active='false'>
       <div class='modal__container'>
-        <img class='modal__backgroundOrange' src='images/half-orange.png'>
-        <img class='modal__backgroundCircle' src='images/half-red.png' />
-        <img class='modal__backgroundWorker' src='images/worker.png' />
+        <img class='modal__backgroundSplash' src='images/splash-fact.png'>
 
-        <div class='modal__box'>
+        <div class='modal__box--full'>
           <header class='modal__header'>
             <h2 class='modal__title'>FACTURACIÓN</h2>
             <button class='modal__close' id='mclose'>CERRAR</button>
@@ -664,6 +662,8 @@
 
   <script async defer src='javascript/index.js'></script>
   <script>
+    var icon = 'https://raw.githubusercontent.com/SteedMx/servifacil/master/src/images/ping.png'
+
     function initMap() {
       // Create a map object and specify the DOM element for display.
       var map = new google.maps.Map(document.getElementById('map'), {
@@ -672,8 +672,7 @@
           lng: -99
         },
         scrollwheel: true,
-        zoom: 5,
-
+        zoom: 5
       })
 
       var marker1 = new google.maps.Marker({
@@ -681,7 +680,8 @@
           lat: 19.8442755,
           lng: -98.9774797
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker2 = new google.maps.Marker({
@@ -689,7 +689,8 @@
           lat: 19.8366984,
           lng: -98.9574462
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker3 = new google.maps.Marker({
@@ -697,7 +698,8 @@
           lat: 20.0678267,
           lng: -99.3302687
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker4 = new google.maps.Marker({
@@ -705,7 +707,8 @@
           lat: 20.0559626,
           lng: -99.3030389
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker5 = new google.maps.Marker({
@@ -713,7 +716,8 @@
           lat: 20.0468906,
           lng: -99.3426057
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker6 = new google.maps.Marker({
@@ -721,7 +725,8 @@
           lat: 19.703757,
           lng: -99.185143
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker7 = new google.maps.Marker({
@@ -729,7 +734,8 @@
           lat: 19.70374,
           lng: -99.185207
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker8 = new google.maps.Marker({
@@ -737,7 +743,8 @@
           lat: 19.657212,
           lng: -99.164631
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker9 = new google.maps.Marker({
@@ -745,7 +752,8 @@
           lat: 19.838287,
           lng: -99.077625
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker10 = new google.maps.Marker({
@@ -753,7 +761,8 @@
           lat: 18.390977,
           lng: -95.753355
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker11 = new google.maps.Marker({
@@ -761,7 +770,8 @@
           lat: 18.390984,
           lng: -95.753382
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker12 = new google.maps.Marker({
@@ -769,7 +779,8 @@
           lat: 19.714988,
           lng: -99.251284
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker13 = new google.maps.Marker({
@@ -777,7 +788,8 @@
           lat: 19.601722,
           lng: -98.918314
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker14 = new google.maps.Marker({
@@ -785,7 +797,8 @@
           lat: 19.44037,
           lng: -98.900434
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker15 = new google.maps.Marker({
@@ -793,7 +806,8 @@
           lat: 19.427311,
           lng: -98.905179
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker16 = new google.maps.Marker({
@@ -801,7 +815,8 @@
           lat: 18.972666,
           lng: -99.589989
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker17 = new google.maps.Marker({
@@ -809,7 +824,8 @@
           lat: 18.972644,
           lng: -99.589996
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker18 = new google.maps.Marker({
@@ -817,7 +833,8 @@
           lat: 19.654651,
           lng: -99.097127
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker19 = new google.maps.Marker({
@@ -825,7 +842,8 @@
           lat: 19.653832,
           lng: -99.097183
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker20 = new google.maps.Marker({
@@ -833,7 +851,8 @@
           lat: 19.675518,
           lng: -99.072233
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker21 = new google.maps.Marker({
@@ -841,7 +860,8 @@
           lat: 19.675518,
           lng: -99.072233
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker22 = new google.maps.Marker({
@@ -849,7 +869,8 @@
           lat: 19.817719,
           lng: -99.864743
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker23 = new google.maps.Marker({
@@ -857,7 +878,8 @@
           lat: 18.043829,
           lng: -92.904052
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
 
@@ -866,7 +888,8 @@
           lat: 18.125192,
           lng: -92.864193
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker25 = new google.maps.Marker({
@@ -874,7 +897,8 @@
           lat: 18.006126,
           lng: -92.948128
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker26 = new google.maps.Marker({
@@ -882,7 +906,8 @@
           lat: 18.006521,
           lng: -92.94812
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker27 = new google.maps.Marker({
@@ -890,7 +915,8 @@
           lat: 17.996069,
           lng: -92.93667
         },
-        map: map
+        map: map,
+        icon: icon
       })
 
       var marker28 = new google.maps.Marker({
@@ -898,7 +924,8 @@
           lat: 17.984593,
           lng: -92.92567
         },
-        map: map
+        map: map,
+        icon: icon
       })
     }
   </script>

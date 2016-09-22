@@ -789,6 +789,9 @@ body {
 .modal__box {
   width: 550px;
 }
+.modal__box--full {
+  width: 100%;
+}
 .modal__title {
   display: inline-block;
   margin: 0;
@@ -815,8 +818,15 @@ body {
   top: 10px;
   right: 0;
 }
+.modal__backgroundSplash {
+  height: 500px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  z-index: -1;
+}
 .modal__form {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 100%;
 }
@@ -847,6 +857,37 @@ body {
 }
 .modal__text {
   margin: 0;
+}
+@media all and (max-width: 550px) {
+  .modal__container {
+    margin: 1rem auto;
+    width: 90%;
+  }
+  .modal__box {
+    margin: 0;
+    width: 100%;
+  }
+  .modal__input,
+  .modal__textarea,
+  .modal__submit,
+  .modal__select {
+    display: block;
+    width: 100%;
+  }
+  .modal__form {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+}
+@media all and (max-width: 920px) and (min-width: 551px) {
+  .modal {
+    margin: 0 auto;
+  }
+  .modal__container {
+    margin: 1rem auto;
+    width: 90%;
+  }
 }
 #map {
   height: 500px;
