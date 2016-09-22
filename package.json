@@ -2,7 +2,7 @@
   "name": "servifacil.com.mx",
   "version": "0.1.0",
   "description": "Servifacil's website",
-  "main": "public/javascript/index.js",
+  "main": "public/javascript/z-index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,9 @@
   ],
   "author": "Michell Ayala <starships@outlook.com>",
   "license": "ISC",
+  "directories": {
+    "doc": "docs"
+  },
   "dependencies": {
     "body-parser": "1.15.2",
     "debug": "2.2.0",
@@ -25,12 +28,13 @@
     "gulp-concat": "2.6.0",
     "gulp-htmlmin": "2.0.0",
     "gulp-image-optimization": "0.1.3",
+    "gulp-pug": "3.0.4",
     "gulp-stylus": "2.5.0",
     "gulp-uglify": "2.0.0",
     "gulp-webserver": "0.9.1"
   },
-  "directories": {
-    "doc": "docs"
+  "engines": {
+    "node": ">=4.0.0"
   },
   "repository": {
     "type": "git",

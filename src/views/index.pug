@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    title Servifácil
+
+    link(href='css/main.css', rel='stylesheet')
+  body
+    main(id='root')
+      include index/modals/map.pug
+      include index/modals/servivales.pug
+      include index/modals/job.pug
+      include index/modals/responsability.pug
+      include index/modals/fact.pug
+      include index/modals/servitips.pug
+      include index/modals/proveedores.pug
+      include index/modals/about.pug
+      include index/modals/history.pug
+      include index/modals/values.pug
+      include index/modals/offer.pug
+      include index/modals/clean.pug
+      include index/modals/service-fact.pug
+
+      include index/mobile/nav.pug
+
+      include index/nav.pug
+      include index/hero.pug
+      include index/mosaic.pug
+      include index/us.pug
+      include index/services.pug
+      include index/products.pug
+      include index/footer.pug
+
+    script(async='true', defer='true', src='javascript/index.js')
