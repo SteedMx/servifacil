@@ -137,6 +137,7 @@ rsModal.addEventListener('click', function () {
 })
 
 var bolsaLink = document.querySelector('#bolsa')
+var bolsaClose = document.querySelector('#bolsa-close')
 var bolsaModal = document.querySelector('#bolsa-modal')
 
 bolsaLink.addEventListener('click', function (event) {
@@ -145,7 +146,7 @@ bolsaLink.addEventListener('click', function (event) {
   bolsaModal.dataset.active = 'true'
 })
 
-bolsaModal.addEventListener('click', function () {
+bolsaClose.addEventListener('click', function () {
   bolsaModal.dataset.active = 'false'
 })
 

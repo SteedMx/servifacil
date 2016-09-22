@@ -16,14 +16,14 @@ var del = require('del')
 
 gulp.task('server', function () {
   gulp
-    .src('./build')
+    .src('./public')
     .pipe(webserver({
       host: '0.0.0.0',
       port: 8080,
       livereload: true,
       directoryListing: {
         enabled: true,
-        path: 'build'
+        path: 'public'
       }
     }));
 });
@@ -44,7 +44,7 @@ gulp.task('debug:javascript', function () {
       'src/javascript/z-carousel.js'
     ])
     .pipe(concat('index.js'))
-    .pipe(gulp.dest('build/javascript'))
+    .pipe(gulp.dest('public/javascript'))
 
   gulp
     .src([
@@ -52,17 +52,17 @@ gulp.task('debug:javascript', function () {
       'src/javascript/z-modal.js'
     ])
     .pipe(concat('metodos.js'))
-    .pipe(gulp.dest('build/javascript'))
+    .pipe(gulp.dest('public/javascript'))
 });
 
 gulp.task('debug:images', function () {
   gulp
     .src(['src/images/**/*.*'])
-    .pipe(gulp.dest('build/images'))
+    .pipe(gulp.dest('public/images'))
 
   gulp
     .src('src/styles/ajax-loader.gif')
-    .pipe(gulp.dest('build/css/'))
+    .pipe(gulp.dest('public/css/'))
 });
 
 gulp.task('debug:css', function () {
@@ -72,23 +72,23 @@ gulp.task('debug:css', function () {
       compress: false,
       'include css': true
     }))
-    .pipe(gulp.dest('build/css'))
+    .pipe(gulp.dest('public/css'))
 
   gulp
     .src('src/styles/fonts/**/*.*')
-    .pipe(gulp.dest('build/css/fonts'))
+    .pipe(gulp.dest('public/css/fonts'))
 });
 
 gulp.task('debug:html', function () {
   gulp.src('src/*.html')
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('public'))
 })
 
 
 gulp.task('debug:fonts', function () {
     gulp
       .src('src/fonts/**/*.*')
-      .pipe(gulp.dest('build/fonts/'))
+      .pipe(gulp.dest('public/fonts/'))
 })
 
 /*!
@@ -106,7 +106,7 @@ gulp.task('dist:javascript', function () {
     ])
     .pipe(concat('index.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('build/javascript'))
+    .pipe(gulp.dest('public/javascript'))
 
   gulp
     .src([
@@ -115,7 +115,7 @@ gulp.task('dist:javascript', function () {
     ])
     .pipe(concat('metodos.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('build/javascript'))
+    .pipe(gulp.dest('public/javascript'))
 });
 
 gulp.task('dist:images', function () {
@@ -126,7 +126,7 @@ gulp.task('dist:images', function () {
       progressive: true,
       interlaced: true
     }))
-    .pipe(gulp.dest('build/images/'));
+    .pipe(gulp.dest('public/images/'));
 });
 
 gulp.task('dist:css', function () {
@@ -137,7 +137,7 @@ gulp.task('dist:css', function () {
       'include css': true,
       user: [autoprefixer()]
     }))
-    .pipe(gulp.dest('build/css'));
+    .pipe(gulp.dest('public/css'));
 });
 
 gulp.task('dist:html', function () {
@@ -145,13 +145,13 @@ gulp.task('dist:html', function () {
     .pipe(htmlmin({
       collapseWhitespace: true
     }))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('public'))
 })
 
 gulp.task('dist:fonts', function () {
     gulp
       .src('src/fonts/**/*.*')
-      .pipe(gulp.dest('build/fonts/'))
+      .pipe(gulp.dest('public/fonts/'))
 })
 
 /*!
@@ -169,7 +169,7 @@ gulp.task('gh:javascript', function () {
     ])
     .pipe(concat('index.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('build/javascript'))
+    .pipe(gulp.dest('docs/javascript'))
 
   gulp
     .src([
@@ -178,7 +178,7 @@ gulp.task('gh:javascript', function () {
     ])
     .pipe(concat('metodos.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('build/javascript'))
+    .pipe(gulp.dest('docs/javascript'))
 });
 
 gulp.task('gh:images', function () {
@@ -189,8 +189,8 @@ gulp.task('gh:images', function () {
       progressive: true,
       interlaced: true
     }))
-    .pipe(gulp.dest('docs/images'));
-});
+    .pipe(gulp.dest('docs/images'))
+})
 
 gulp.task('gh:css', function () {
   gulp
@@ -217,6 +217,6 @@ gulp.task('gh:fonts', function () {
       .pipe(gulp.dest('docs/fonts/'))
 })
 
-gulp.task('default', ['server', 'debug:javascript', 'debug:css', 'debug:html', 'debug:images', 'debug:fonts', 'watch']);
+gulp.task('default', ['server', 'debug:javascript', 'debug:css', 'debug:html', 'debug:images', 'debug:fonts', 'watch'])
 gulp.task('github', ['gh:javascript', 'gh:images', 'gh:css', 'gh:html', 'gh:fonts'])
-gulp.task('build', ['dist:javascript', 'dist:css', 'dist:html', 'dist:images', 'dist:fonts']);
+gulp.task('build', ['dist:javascript', 'dist:css', 'dist:html', 'dist:images', 'dist:fonts'])
