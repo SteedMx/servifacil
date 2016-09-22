@@ -28,7 +28,7 @@ gulp.task('server', function () {
 })
 
 gulp.task('watch', function () {
-  gulp.watch('src/styles/**/*.css', ['debug:css'])
+  gulp.watch('src/styles/**/*.styl', ['debug:css'])
   gulp.watch('src/javascript/**/*.js', ['debug:javascript'])
   gulp.watch('src/views/**/*.pug', ['debug:html'])
 })

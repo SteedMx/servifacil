@@ -24,9 +24,10 @@ footer(class='footer', id='contact')
 
     div(class='footer__section')
       form(class='footer__form')
-        input(class='footer__input', type='text', name='contactName', placeholder='Nombre')
-        input(class='footer__input', type='text', name='contactEmail', placeholder='Email')
-        textarea(class='footer__textarea', name='contactMessage', placeholder='Mensaje')
+        input(class='footer__input', type='text', name='contactName', placeholder='Nombre', required='true')
+        input(class='footer__input', type='email', name='contactEmail', placeholder='Email', required='true')
+        input(class='footer__input', type='text', name='contactSubject', placeholder='Titulo', required='true')
+        textarea(class='footer__textarea', name='contactMessage', placeholder='Mensaje', required='true')
         input(class='footer__submit', type='submit')
 
     div(class='footer__box')

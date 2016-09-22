@@ -432,4 +432,64 @@ $(document).ready(function () {
   var script = document.createElement('script')
   script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDkAzNwyVOO-eiYaKszYkUuAaQN3Y9ttfA&callback=initMap'
   document.querySelector('body').appendChild(script)
+
+  var footerForm = document.querySelector('.footer__form')
+
+  footerForm.addEventListener('submit', function (event) {
+    event.preventDefault()
+
+    var successModal = document.querySelector('#success-modal')
+    var failureModal = document.querySelector('#failure-modal')
+
+    var successClose = document.querySelector('#success-close')
+    var failureClose = document.querySelector('#failure-close')
+
+    var contactName = footerForm.contactName
+    var contactEmail = footerForm.contactEmail
+    var contactMessage = footerForm.contactMessage
+    var contactSubject = footerForm.contactSubject
+
+    successClose.addEventListener('click', function (event) {
+      event.preventDefault()
+      successModal.dataset.active = 'false'
+    })
+
+    failureClose.addEventListener('click', function (event) {
+      event.preventDefault()
+      failureModal.dataset.active = 'false'
+    })
+
+    var data = {
+      name: contactName.value,
+      email: contactEmail.value,
+      message: contactMessage.value,
+      subject: contactSubject.value
+    }
+
+    var clearForm = function () {
+      contactName.value = ''
+      contactEmail.value = ''
+      contactMessage.value = ''
+      contactSubject.value = ''
+    }
+
+    var success = function (res) {
+      clearForm()
+      successModal.dataset.active = 'true'
+    }
+
+    var error = function (err) {
+      clearForm()
+      failureModal.dataset.ative = 'true'
+    }
+
+    $.ajax({
+      type: 'POST',
+      url: 'http://localhost:3000/contact',
+      data: data,
+      success: success,
+      error: error,
+      dataType: 'json'
+    })
+  })
 })
