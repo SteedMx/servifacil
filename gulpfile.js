@@ -4,12 +4,9 @@ const gulp = require('gulp')
 const webserver = require('gulp-webserver')
 const stylus = require('gulp-stylus')
 const pug = require('gulp-pug')
-const imageop = require('gulp-image-optimization')
 const concat = require('gulp-concat')
-const htmlmin = require('gulp-htmlmin')
 const uglify = require('gulp-uglify')
 const autoprefixer = require('gulp-autoprefixer')
-const del = require('del')
 
 /*!
  * Development tasks
@@ -30,9 +27,9 @@ gulp.task('server', function () {
 })
 
 gulp.task('watch', function () {
-  gulp.watch('src/styles/**/*.*', ['debug:css'])
-  gulp.watch('src/javascript/**/*.*', ['debug:javascript'])
-  gulp.watch('src/views/**/*.*', ['debug:html'])
+  gulp.watch('src/styles/**/*.css', ['debug:css'])
+  gulp.watch('src/javascript/**/*.js', ['debug:javascript'])
+  gulp.watch('src/views/**/*.pug', ['debug:html'])
 })
 
 gulp.task('debug:javascript', function () {
@@ -68,7 +65,10 @@ gulp.task('debug:images', function () {
 
 gulp.task('debug:css', function () {
   gulp
-    .src('src/styles/*.styl')
+    .src([
+      'src/styles/main.styl',
+      'src/styles/metodos.styl'
+    ])
     .pipe(stylus({
       compress: false,
       'include css': true
@@ -129,17 +129,15 @@ gulp.task('dist:javascript', function () {
 gulp.task('dist:images', function () {
   gulp
     .src(['src/images/**/*.*'])
-    .pipe(imageop({
-      optimizationLevel: 5,
-      progressive: true,
-      interlaced: true
-    }))
     .pipe(gulp.dest('public/images/'))
 })
 
 gulp.task('dist:css', function () {
   gulp
-    .src('src/styles/*.styl')
+    .src([
+      'src/styles/main.styl',
+      'src/styles/metodos.styl'
+    ])
     .pipe(stylus({
       compress: true,
       'include css': true,
@@ -149,9 +147,13 @@ gulp.task('dist:css', function () {
 })
 
 gulp.task('dist:html', function () {
-  gulp.src('src/*.html')
-    .pipe(htmlmin({
-      collapseWhitespace: true
+  gulp
+    .src([
+      'src/views/index.pug',
+      'src/views/metodos.pug'
+    ])
+    .pipe(pug({
+      pretty: false
     }))
     .pipe(gulp.dest('public'))
 })
@@ -192,17 +194,15 @@ gulp.task('gh:javascript', function () {
 gulp.task('gh:images', function () {
   gulp
     .src(['src/images/**/*.*'])
-    .pipe(imageop({
-      optimizationLevel: 5,
-      progressive: true,
-      interlaced: true
-    }))
     .pipe(gulp.dest('docs/images'))
 })
 
 gulp.task('gh:css', function () {
   gulp
-    .src('src/styles/*.styl')
+    .src([
+      'src/styles/main.styl',
+      'src/styles/metodos.styl'
+    ])
     .pipe(stylus({
       compress: true,
       'include css': true,
@@ -212,11 +212,15 @@ gulp.task('gh:css', function () {
 })
 
 gulp.task('gh:html', function () {
-  gulp.src('src/*.html')
-    .pipe(htmlmin({
-      collapseWhitespace: true
+  gulp
+    .src([
+      'src/views/index.pug',
+      'src/views/metodos.pug'
+    ])
+    .pipe(pug({
+      pretty: false
     }))
-    .pipe(gulp.dest('docs'))
+    .pipe(gulp.dest('public'))
 })
 
 gulp.task('gh:fonts', function () {
