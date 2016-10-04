@@ -1,4 +1,7 @@
 .payments
+  &__mobileText
+    display none
+
   &__container
     margin 0 auto
     padding 2rem
@@ -171,18 +174,40 @@
     &[data-active='false']
       display none
 
-  @media all and (max-width 500px)
-    width 100%
-
+  @media all and (max-width 800px)
     &__container
-      margin 0 auto
+      margin 0
       padding 2rem 0
       width 100%
 
+    &__credit
     &__splash
-      margin-top 4rem
-      transform rotate(90deg)
-      width 200px
+    &__vales
+      display none
+
+    &__valesText
+    &__debitText
+    &__creditText
+    &__text-debt
+      color black
+      font-size 1rem
+      margin 2rem auto
+      position static
+
+    &__picture-debt
+      display none
+
+    &__see-debt
+      color black
+      display block
+      position static
+
+    &__mobileTitle
+      display block
+      text-align center
+
+    #servivales
+      padding 0
 
 .modal
   &__title
