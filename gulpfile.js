@@ -184,8 +184,8 @@ gulp.task('gh:javascript', function () {
 
 gulp.task('gh:images', function () {
   gulp
-    .src('src/images/**/*.*')
-    .pipe(gulp.dest('public/images/'))
+    .src(['src/images/**/*.*'])
+    .pipe(gulp.dest('docs/images'))
 })
 
 gulp.task('gh:css', function () {
