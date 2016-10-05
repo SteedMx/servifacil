@@ -33,4 +33,18 @@ $(document).ready(function() {
       $nav.attr('data-transparent', 'false')
     }
   })
+
+  /*!
+   * Mobile navigation
+   */
+  var mobileItems = document.querySelectorAll('.nav-mobile__tabsItem')
+  var mobileTabs = document.querySelector('.nav-mobile__tabs')
+  var mobileHamburger = document.querySelector('.nav-mobile__hamburguer')
+
+  mobileItems.forEach(function (item) {
+    item.addEventListener('click', function (event) {
+      mobileTabs.dataset.active = 'false'
+      mobileHamburger.dataset.active = 'false'
+    })
+  })
 })
