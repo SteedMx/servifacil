@@ -151,17 +151,9 @@ $(document).ready(function () {
     bolsaModal.dataset.active = 'false'
   })
 
-  var servivales = document.querySelector('#product-vales')
-  var servivalesModal = document.querySelector('#product-vales-modal')
-
-  servivales.addEventListener('click', function (event) {
-    event.preventDefault()
-    servivalesModal.dataset.active = 'true'
-  })
-
-  servivalesModal.addEventListener('click', function () {
-    servivalesModal.dataset.active = 'false'
-  })
+  /*!
+   * Map
+   */
 
   var icon = 'https://raw.githubusercontent.com/SteedMx/servifacil/master/src/images/ping.png'
   window.initMap = function () {
