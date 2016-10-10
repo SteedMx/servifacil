@@ -48,7 +48,29 @@
       text-decoration none
       font-size 1rem
 
-  @media all and (max-width 800px)
+  @media all and (max-width 600px)
+    &__title
+      border-bottom 4px solid black
+      margin 2rem 0
+
+    &__container
+      padding 0
+
+  @media all and (min-width 601px) and (max-width 800px)
+    margin 0
+    padding 10rem 0 2rem 0
+    position static
+
+    &__title
+      margin 0
+
+    &__box
+      padding 0
+
+    &__container
+      margin 0
+      padding 2rem 0
+
     &__section
       &Label
         margin 0.5rem
