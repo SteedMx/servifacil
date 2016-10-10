@@ -7,36 +7,35 @@ div(class='modal', id='mfact-modal', data-active='false')
       button(class='modal__close', id='mclose') CERRAR
 
     div(class='modal__box--full')
+      form(class='modal__form')
+        input(class='modal__input', placeholder='Folio del ticket de carga', type='text')
+        input(class='modal__input', placeholder='Importe exacto de la carga', type='text')
 
-        form(class='modal__form')
-          input(class='modal__input', placeholder='Folio del ticket de carga', type='text')
-          input(class='modal__input', placeholder='Importe exacto de la carga', type='text')
+        select(class='modal__select')
+          option(default='true') Forma de pago utilizada
+          option Tarjeta de debito
+          option Tarjeta de credito
+          option Efectivo
+          option Monedero electronico
+          option Tranferencia electronica de fondos
+          option Deposito en cuenta
 
-          select(class='modal__select')
-            option(default='true') Forma de pago utilizada
-            option Tarjeta de debito
-            option Tarjeta de credito
-            option Efectivo
-            option Monedero electronico
-            option Tranferencia electronica de fondos
-            option Deposito en cuenta
+        select(class='modal__select')
+          option(default='true') Estacion de servicio
 
-          select(class='modal__select')
-            option(default='true') Estacion de servicio
+        input(class='modal__input', placeholder='Últimos cuadro dígitos de forma de pago', type='text')
+        input(class='modal__input', placeholder='Fecha del ticket', type='text')
+        input(class='modal__input', placeholder='Nombre o razón social', type='text')
+        input(class='modal__input', placeholder='Domicilio fiscal', type='text')
+        input(class='modal__input', placeholder='Colonia', type='text')
+        input(class='modal__input', placeholder='Ciudad', type='text')
 
-          input(class='modal__input', placeholder='Últimos cuadro dígitos de forma de pago', type='text')
-          input(class='modal__input', placeholder='Fecha del ticket', type='text')
-          input(class='modal__input', placeholder='Nombre o razón social', type='text')
-          input(class='modal__input', placeholder='Domicilio fiscal', type='text')
-          input(class='modal__input', placeholder='Colonia', type='text')
-          input(class='modal__input', placeholder='Ciudad', type='text')
+        select(class='modal__select')
+          option(default='true') Estado
 
-          select(class='modal__select')
-            option(default='true') Estado
-
-          input(class='modal__input', placeholder='RFC', type='text')
-          input(class='modal__input', placeholder='Código postal', type='text')
-          input(class='modal__input', placeholder='Correo electrónico', type='email')
-          input(class='modal__input', placeholder='Teléfono', type='text')
-          textarea(class='modal__textarea', placeholder='Comentarios')
-          input(class='modal__submit', value='Enviar', type='submit')
+        input(class='modal__input', placeholder='RFC', type='text')
+        input(class='modal__input', placeholder='Código postal', type='text')
+        input(class='modal__input', placeholder='Correo electrónico', type='email')
+        input(class='modal__input', placeholder='Teléfono', type='text')
+        textarea(class='modal__textarea', placeholder='Comentarios')
+        input(class='modal__submit', value='Enviar', type='submit')

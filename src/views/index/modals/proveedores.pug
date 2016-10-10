@@ -5,8 +5,11 @@ div(class='modal', id='sprov-modal', data-active='false')
     img(class='modal__backgroundWorker', src='images/worker.png')
 
     div(class='modal__box')
-      h2(class='modal__title') PROVEEDORES
-      p En el Grupo Servifácil nuestra prioridad es dar más valor a nuestros clientes, por tanto, buscamos respaldarnos con proveedores confiables, que cumplan con los requerimientos de calidad de sus productos y servicios.
+      header(class='modal__header')
+        h2(class='modal__title') PROVEEDORES
+        button(class='modal__close', id='sprov-close') CERRAR
+
+      p(class='modal__text') En el Grupo Servifácil nuestra prioridad es dar más valor a nuestros clientes, por tanto, buscamos respaldarnos con proveedores confiables, que cumplan con los requerimientos de calidad de sus productos y servicios.
       p Para asegurar una relación de mutua confianza, requerimos los siguientes compromisos de cada uno de nuestros socios comerciales:
 
       ul
@@ -74,4 +77,3 @@ div(class='modal', id='sprov-modal', data-active='false')
       br
       p(class='modal__text') auxcomp1df@servifacil.com.mx
       p(class='modal__text') Ext. 128
-

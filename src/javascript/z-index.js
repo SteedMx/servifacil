@@ -40,37 +40,41 @@ $(document).ready(function () {
 
   var gasLink = document.querySelector('#gas')
   var gasModal = document.querySelector('#ser-gas')
+  var gasClose = document.querySelector('#ser-close')
 
   gasLink.addEventListener('click', function (event) {
     event.preventDefault()
     gasModal.dataset.active = 'true'
   })
 
-  gasModal.addEventListener('click', function () {
+  gasClose.addEventListener('click', function () {
     gasModal.dataset.active = 'false'
   })
 
   var factLink = document.querySelector('#fact')
   var factModal = document.querySelector('#ser-fact')
+  var factClose = document.querySelector('#ser-fact-close')
 
   factLink.addEventListener('click', function (event) {
     event.preventDefault()
     factModal.dataset.active = 'true'
   })
 
-  factModal.addEventListener('click', function () {
+  factClose.addEventListener('click', function () {
     factModal.dataset.active = 'false'
   })
 
   var limpLink = document.querySelector('#limp')
   var limpModal = document.querySelector('#ser-limp')
+  var limpClose = document.querySelector('#ser-limp-close')
 
   limpLink.addEventListener('click', function (event) {
     event.preventDefault()
     limpModal.dataset.active = 'true'
   })
 
-  limpModal.addEventListener('click', function () {
+  limpClose.addEventListener('click', function () {
+    console.log('some shit')
     limpModal.dataset.active = 'false'
   })
 
@@ -105,25 +109,27 @@ $(document).ready(function () {
 
   var sprovLink = document.querySelector('#provee')
   var sprovModal = document.querySelector('#sprov-modal')
+  var sprovClose = document.querySelector('#sprov-close')
 
   sprovLink.addEventListener('click', function (event) {
     event.preventDefault()
     sprovModal.dataset.active = 'true'
   })
 
-  sprovModal.addEventListener('click', function () {
+  sprovClose.addEventListener('click', function () {
     sprovModal.dataset.active = 'false'
   })
 
   var spitsLink = document.querySelector('#spits')
   var spitsModal = document.querySelector('#spits-modal')
+  var spitsClose = document.querySelector('#spits-close')
 
   spitsLink.addEventListener('click', function (event) {
     event.preventDefault()
     spitsModal.dataset.active = 'true'
   })
 
-  spitsModal.addEventListener('click', function () {
+  spitsClose.addEventListener('click', function () {
     spitsModal.dataset.active = 'false'
   })
 
