@@ -1,38 +1,40 @@
 $(document).ready(function () {
   var misionLink = document.querySelector('#mvv-link')
   var misionModal = document.querySelector('#mvv-modal')
+  var misionClose = document.querySelector('#mvv-close')
 
   misionLink.addEventListener('click', function (event) {
     event.preventDefault()
     misionModal.dataset.active = 'true'
   })
 
-  misionModal.addEventListener('click', function () {
+  misionClose.addEventListener('click', function () {
     misionModal.dataset.active = 'false'
   })
 
   var historyLink = document.querySelector('#h-link')
   var historyModal = document.querySelector('#h-modal')
+  var historyClose = document.querySelector('#h-close')
 
   historyLink.addEventListener('click', function (event) {
-    console.log('clicking')
     event.preventDefault()
     historyModal.dataset.active = 'true'
   })
 
-  historyModal.addEventListener('click', function () {
+  historyClose.addEventListener('click', function () {
     historyModal.dataset.active = 'false'
   })
 
   var qsLink = document.querySelector('#qs-link')
   var qsModal = document.querySelector('#qs-modal')
+  var qsClose = document.querySelector('#qs-close')
 
   qsLink.addEventListener('click', function (event) {
     event.preventDefault()
     qsModal.dataset.active = 'true'
   })
 
-  qsModal.addEventListener('click', function () {
+  qsClose.addEventListener('click', function () {
     qsModal.dataset.active = 'false'
   })
 
@@ -127,13 +129,14 @@ $(document).ready(function () {
 
   var rsLink = document.querySelector('#rs')
   var rsModal = document.querySelector('#rs-modal')
+  var rsClose = document.querySelector('#rs-close')
 
   rsLink.addEventListener('click', function (event) {
     event.preventDefault()
     rsModal.dataset.active = 'true'
   })
 
-  rsModal.addEventListener('click', function () {
+  rsClose.addEventListener('click', function () {
     rsModal.dataset.active = 'false'
   })
 
