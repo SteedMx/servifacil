@@ -1,20 +1,33 @@
 .mosaic
-  background-color white
+  background-image url(../images/map-background.png)
   margin 0
   padding 0
 
   &__container
     margin 0 auto
-    padding 6rem 0
+    padding 14rem 0
 
   &__header
     background-color none
     text-align center
 
   &__box
-    display flex
     justify-content space-around
-    margin-top 2rem
+    margin-bottom -36rem
+    position relative
+    text-align center
+
+  &__button
+    background-color #c33
+    border none
+    color white
+    display block
+    font-weight bold
+    margin 0 auto 10rem auto
+    padding 1rem
+
+    &:hover
+      cursor pointer
 
   &__mainTitle
     border-bottom 4px solid #c33
@@ -40,6 +53,7 @@
   &__item
     display inline-block
     text-decoration none
+    margin 0 3rem
     width 300px
 
   &__picture
@@ -47,7 +61,7 @@
     text-align center
 
   &__image
-    height 150px
+    height 180px
     margin 0 auto
     text-align center
 
