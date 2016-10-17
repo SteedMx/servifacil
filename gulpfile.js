@@ -6,7 +6,6 @@ const stylus = require('gulp-stylus')
 const pug = require('gulp-pug')
 const concat = require('gulp-concat')
 const uglify = require('gulp-uglify')
-const autoprefixer = require('gulp-autoprefixer')
 const imageop = require('gulp-imagemin')
 
 /*!
@@ -132,8 +131,7 @@ gulp.task('dist:css', function () {
       'src/styles/metodos.styl'
     ])
     .pipe(stylus({
-      compress: true,
-      user: [autoprefixer()]
+      compress: true
     }))
     .pipe(gulp.dest('public/css'));
 })
@@ -196,8 +194,7 @@ gulp.task('gh:css', function () {
       'src/styles/metodos.styl'
     ])
     .pipe(stylus({
-      compress: true,
-      user: [autoprefixer()]
+      compress: true
     }))
     .pipe(gulp.dest('docs/css'))
 })
