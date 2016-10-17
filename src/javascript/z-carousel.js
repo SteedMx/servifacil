@@ -44,4 +44,12 @@ $(document).ready(function () {
       }
     ]
   })
+
+  $('.hero__carousel').slick({
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true
+  })
 })
