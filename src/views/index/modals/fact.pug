@@ -4,6 +4,8 @@ div(class='modal', id='mfact-modal', data-active='false')
 
     header(class='modal__header')
       h2(class='modal__title') FACTURACIÓN
+      button(class='modal__close', id='mclose')
+        i(class="fa fa-times" aria-hidden="true")
 
     div(class='modal__box--full')
       form(class='modal__form')
@@ -38,6 +40,3 @@ div(class='modal', id='mfact-modal', data-active='false')
         input(class='modal__input', placeholder='Teléfono', type='text')
         textarea(class='modal__textarea', placeholder='Comentarios')
         input(class='modal__submit', value='Enviar', type='submit')
-
-    footer(class='modal__footer')
-      button(class='modal__close', id='mclose') CERRAR
