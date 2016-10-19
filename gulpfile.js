@@ -49,7 +49,8 @@ gulp.task('debug:javascript', function () {
   gulp
     .src([
       'src/javascript/jquery.js',
-      'src/javascript/z-modal.js'
+      'src/javascript/z-modal.js',
+      'src/javascript/z-hamburguer.js'
     ])
     .pipe(concat('metodos.js'))
     .pipe(gulp.dest('public/javascript'))
@@ -112,7 +113,8 @@ gulp.task('dist:javascript', function () {
   gulp
     .src([
       'src/javascript/jquery.js',
-      'src/javascript/z-modal.js'
+      'src/javascript/z-modal.js',
+      'src/javascript/z-hamburguer.js'
     ])
     .pipe(concat('metodos.js'))
     .pipe(uglify())
@@ -175,7 +177,8 @@ gulp.task('gh:javascript', function () {
   gulp
     .src([
       'src/javascript/jquery.js',
-      'src/javascript/z-modal.js'
+      'src/javascript/z-modal.js',
+      'src/javascript/z-hamburguer.js'
     ])
     .pipe(concat('metodos.js'))
     .pipe(uglify())
