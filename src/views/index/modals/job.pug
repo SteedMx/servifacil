@@ -4,11 +4,10 @@ div(class='modal', id='bolsa-modal', data-active='false')
     img(class='modal__backgroundCircle', src='images/half-red.png')
     img(class='modal__backgroundWorker', src='images/worker.png')
 
-    div(class='modal__box')
-      header(class='modal__header')
-        h2(class='modal__title') VACANTES OFERTADAS
-        button(class='modal__close', id='bolsa-close') CERRAR
+    header(class='modal__header')
+      h2(class='modal__title') VACANTES OFERTADAS
 
+    div(class='modal__box')
       p Siempre estamos en busca de nuevos talentos para sumarse a nuestro equipo. Revisa aquí cuáles son las vacantes que tenemos actualmente, para saber si hay alguna que se apega a tu perfil.
       p(class='modal__text')
         strong Vacante:
@@ -90,3 +89,6 @@ div(class='modal', id='bolsa-modal', data-active='false')
 
         textarea(class='modal__textarea', name='comments', plaecholder='Comentarios')
         input(type='submit', class='modal__submit')
+
+    footer(class='modal__footer')
+      button(class='modal__close', id='bolsa-close') CERRAR

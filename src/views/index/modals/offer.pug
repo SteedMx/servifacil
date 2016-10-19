@@ -4,11 +4,10 @@ div(class='modal', id='ser-gas', data-active='false')
     img(class='modal__backgroundCircle', src='images/half-red.png')
     img(class='modal__backgroundWorker', src='images/worker.png')
 
-    div(class='modal__box')
-      header(class='modal__header')
-        h2(class='modal__title') OFERTA DE COMBUSTIBLES
-        button(class='modal__close', id='ser-close') CERRAR
+    header(class='modal__header')
+      h2(class='modal__title') OFERTA DE COMBUSTIBLES
 
+    div(class='modal__box')
       p(class='modal__text') En cada una de nuestras gasolineras tenemos la capacidad, medidas de seguridad y tecnología para ofrecer combustibles como:   PEMEX MAGNA, PEMEX PREMIUM UBA y PEMEX DIÉSEL.
       p PEMEX mediante su certificación Cualli reconoce a las gasolineras que están comprometidas en mejorar la calidad y la atención al consumidor, las estaciones de servicio de Servifácil han adquirido tal reconocimiento mediante nuestro proceso de calidad: el despacho de la gasolina y diésel se realiza en dispensarios que cumplen con la NOM-005-SCFI-2005, certificados para la medición de combustibles, gracias a ello podemos ofrecer con total garantía:
 
@@ -20,3 +19,6 @@ div(class='modal', id='ser-gas', data-active='false')
 
       h3 PEMEX DIÉSEL
       p Combustible utilizado en motores de combustión interna, para vehículos empleados en la transportación de diversos tipos de carga y el transporte de pasajeros.
+
+    footer(cass='modal__footer')
+      button(class='modal__close', id='ser-close') CERRAR

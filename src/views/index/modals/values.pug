@@ -4,11 +4,10 @@ div(class='modal', id='mvv-modal', data-active='false')
     img(class='modal__backgroundCircle', src='images/half-red.png')
     img(class='modal__backgroundWorker', src='images/worker.png')
 
-    div(class='modal__box')
-      header(class='modal__header')
-        h2(class='modal__title') MISION, VISION Y VALORES
-        button(class='modal__close', id='mvv-close') CERRAR
+    header(class='modal__header')
+      h2(class='modal__title') MISION, VISION Y VALORES
 
+    div(class='modal__box')
       p(class='modal__text') Somos una empresa profundamente comprometida con brindar un servicio de calidad a todos nuestros clientes; esto lo logramos basándonos en una sólida filosofía afianzada en nuestros valores corporativos.
 
       h3 Misión ¿Qué hacemos?
@@ -34,3 +33,6 @@ div(class='modal', id='mvv-modal', data-active='false')
         li Trabajamos en equipo para crear sinergia
         li Brindamos oportunidad a nuestra gente de crecer y participar
         li Construimos nuestra reputación con lo que hacemos y decimos
+
+    footer(class='modal__footer')
+      button(class='modal__close', id='mvv-close') CERRAR
