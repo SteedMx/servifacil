@@ -3,6 +3,8 @@
   display none
   font-family 'Flama Basic'
   font-weight bold
+  overflow: visible
+  position: relative
 
   &__container
     box-sizing border-box
@@ -24,6 +26,13 @@
 
     &Logo
       width 150px
+
+  &__tabsLogo
+    position absolute
+    z-index 2000
+    width 300px
+    margin-top -3vh
+    margin-left -7vw
 
   @media all and (min-width 701px) and (max-width 1200px)
     display block
