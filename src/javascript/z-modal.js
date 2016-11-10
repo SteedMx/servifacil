@@ -1,9 +1,10 @@
-var debitLink = document.querySelector('#sm-debit')
+var debitLink = document.querySelector('#sm-debit2')
 var debitModal = document.querySelector('.payments__modalDebit')
 
+console.log(324432)
 debitLink.addEventListener('click', function (event) {
+  console.log(123456)
   event.preventDefault()
-
   if (debitModal.dataset.active === 'false') {
     debitModal.dataset.active = 'true'
   }
@@ -17,7 +18,7 @@ debitModal.addEventListener('click', function (event) {
   }
 })
 
-var creditLink = document.querySelector('#sm-credit')
+var creditLink = document.querySelector('#sm-credit2')
 var creditModal = document.querySelector('.payments__modalCredit')
 
 creditLink.addEventListener('click', function (event) {
@@ -37,7 +38,7 @@ creditModal.addEventListener('click', function (event) {
   }
 })
 
-var valesLink = document.querySelector('#sm-vales')
+var valesLink = document.querySelector('#sm-vales2')
 var valesModal = document.querySelector('.payments__modalVales')
 
 valesLink.addEventListener('click', function (event) {
