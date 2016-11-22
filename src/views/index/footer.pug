@@ -23,7 +23,7 @@ footer(class='footer', id='contact')
       a(class='footer__link', id='bolsa', href='#') BOLSA DE TRABAJO
 
     div(class='footer__section')
-      form(class='footer__form')
+      form(class='footer__form', method='post', action='/contact')
         input(class='footer__input', type='text', name='contactName', placeholder='Nombre', required='true')
         input(class='footer__input', type='email', name='contactEmail', placeholder='Email', required='true')
         input(class='footer__input', type='text', name='contactSubject', placeholder='Titulo', required='true')

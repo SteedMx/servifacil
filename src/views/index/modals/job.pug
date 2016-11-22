@@ -52,7 +52,7 @@ div(class='modal', id='bolsa-modal', data-active='false')
       h2(class='modal__title') INGREA TU CV
       p Con nuestra Bolsa de Trabajo buscamos crear un medio de enlace entre tus habilidades y experiencia con nuestras oportunidades laborales. Por eso te invitamos a enviarnos tus datos y nosotros nos comunicaremos contigo en cuanto haya un puesto que cubra tus habilidades.
 
-      form(class='modal__form')
+      form(class='modal__form', method='post', action='/cv')
         input(class='modal__input', name='name', placeholder='Nombre completo', type='text')
         input(class='modal__input', name='age',placeholder='Edad', type='text')
 

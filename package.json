@@ -21,6 +21,12 @@
     "debug": "2.2.0",
     "email": "0.2.6",
     "express": "4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-pug": "^3.0.4",
+    "gulp-stylus": "^2.5.0",
+    "gulp-webserver": "^0.9.1",
     "mandrill-api": "1.0.45",
     "morgan": "1.7.0",
     "node-mandrill": "1.0.1"
