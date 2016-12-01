@@ -17,8 +17,8 @@ gulp.task('server', function () {
     .src('./public')
     .pipe(webserver({
       host: '0.0.0.0',
-      port: 8080,
-      livereload: true,
+      port: 8082,
+      livereload: false,
       directoryListing: {
         enabled: true,
         path: 'public'
