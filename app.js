@@ -9,6 +9,7 @@ const resolve = require('path').resolve
 
 const Message = require('./lib/message')
 const Mandrill = require('./lib/mandrill')
+const mailgun = require('./lib/mailgun')
 
 const app = express()
 const files = () => express.static(resolve(__dirname, 'public'))
@@ -33,22 +34,23 @@ app.get(/metodos(.html)?$/, (req, res) => {
 
 app.post(/\/contact$/, (req, res) => {
   const body = req.body
-  const msg = Message.contact(body)
-
-  Mandrill
-    .sendEmail(msg)
-    .then((status) => res.status(201).json(status))
-    .catch((err) => res.status(500).json(err))
+  const msg = mailgun.contactMailHtml(body)
+  mailgun.sendMail(msg)
+  res.redirect('/')
 })
 
 app.post(/\/cv$/, (req, res) => {
   const body = req.body
-  const msg = Message.cv(body)
+  const msg = mailgun.cvMailHtml(body)
+  mailgun.sendMail(msg)
+  res.redirect('/')
+})
 
-  Mandrill
-    .sendEmail(msg)
-    .then((status) => res.status(200).json(status))
-    .catch((err) => res.status(500).json(err))
+app.post(/\/factura$/, (req, res) => {
+  const body = req.body
+  const msg = mailgun.facturacionMailHtml(body)
+  mailgun.sendMail(msg)
+  res.redirect('/')
 })
 
 if (!module.parent) {
