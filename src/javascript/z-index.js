@@ -178,27 +178,30 @@ $(document).ready(function () {
 
     var marker1 = new google.maps.Marker({
       position: {
-        lat: 19.8442755,
-        lng: -98.9774797
+        lat: 18.146370,
+        lng: -94.420677
       },
+      title: 'Lemarroy',
       map: map,
       icon: icon
     })
 
     var marker2 = new google.maps.Marker({
       position: {
-        lat: 19.8366984,
-        lng: -98.9574462
+        lat: 17.926456,
+        lng: -94.094460
       },
+      title: 'Calzadas 5',
       map: map,
       icon: icon
     })
 
     var marker3 = new google.maps.Marker({
       position: {
-        lat: 20.0678267,
-        lng: -99.3302687
+        lat: 18.078382,
+        lng: -94.408410
       },
+      title:  'Nanchital',
       map: map,
       icon: icon
     })
@@ -208,177 +211,217 @@ $(document).ready(function () {
         lat: 20.0559626,
         lng: -99.3030389
       },
+      title: 'Bravo Grande',
       map: map,
       icon: icon
     })
 
     var marker5 = new google.maps.Marker({
       position: {
-        lat: 20.0468906,
-        lng: -99.3426057
+        lat: 18.366699,
+        lng: -95.777482
       },
+      title: 'Bravo Chica',
       map: map,
       icon: icon
     })
 
     var marker6 = new google.maps.Marker({
       position: {
-        lat: 19.703757,
-        lng: -99.185143
+        lat: 17.921193,
+        lng: -94.930843
       },
+      title: 'Oteapan 1',
       map: map,
       icon: icon
     })
 
     var marker7 = new google.maps.Marker({
       position: {
-        lat: 19.70374,
-        lng: -99.185207
+        lat: 18.808802,
+        lng: -96.720839
       },
+      title: 'Cuitláhuac',
       map: map,
       icon: icon
     })
 
     var marker8 = new google.maps.Marker({
       position: {
-        lat: 19.657212,
-        lng: -99.164631
+        lat: 18.155946,
+        lng: -94.400511
       },
+      title: 'Quevedo',
       map: map,
       icon: icon
     })
 
     var marker9 = new google.maps.Marker({
       position: {
-        lat: 19.838287,
-        lng: -99.077625
+        lat: 18.118937,
+        lng: -94.446149
       },
+      title: 'Calzadas 1',
       map: map,
       icon: icon
     })
 
     var marker10 = new google.maps.Marker({
       position: {
-        lat: 18.390977,
-        lng: -95.753355
+        lat: 17.956801,
+        lng: -94.909119
       },
+      title: 'Hojitas',
       map: map,
       icon: icon
     })
 
     var marker11 = new google.maps.Marker({
       position: {
-        lat: 18.390984,
-        lng: -95.753382
+        lat: 17.956324,
+        lng: -94.909156
       },
+      title: 'Sayula 2',
       map: map,
       icon: icon
     })
 
     var marker12 = new google.maps.Marker({
       position: {
-        lat: 19.714988,
-        lng: -99.251284
+        lat: 18.143261,
+        lng: -94.520729
       },
+      title: 'Oteapan 4',
       map: map,
       icon: icon
     })
 
     var marker13 = new google.maps.Marker({
       position: {
-        lat: 19.601722,
-        lng: -98.918314
+        lat: 17.899417,
+        lng: -94.099172
       },
+      title: 'Calzadas 3',
       map: map,
       icon: icon
     })
 
     var marker14 = new google.maps.Marker({
       position: {
-        lat: 19.44037,
-        lng: -98.900434
+        lat: 18.014668,
+        lng: -94.393218
       },
+      title: 'Ixhuatlán',
       map: map,
       icon: icon
     })
 
     var marker15 = new google.maps.Marker({
       position: {
-        lat: 19.427311,
-        lng: -98.905179
+        lat: 18.102644,
+        lng: -94.456340
       },
+      title: 'Calzadas  IV',
       map: map,
       icon: icon
     })
 
     var marker16 = new google.maps.Marker({
       position: {
-        lat: 18.972666,
-        lng: -99.589989
+        lat: 17.876890,
+        lng: -94.963834
       },
+      title: 'Sayula Centro',
       map: map,
       icon: icon
     })
 
     var marker17 = new google.maps.Marker({
       position: {
-        lat: 18.972644,
-        lng: -99.589996
+        lat: 17.940583,
+        lng: -94.910962
       },
+      title: 'La Florida',
       map: map,
       icon: icon
     })
 
     var marker18 = new google.maps.Marker({
       position: {
-        lat: 19.654651,
-        lng: -99.097127
+        lat: 18.086759,
+        lng: -94.040271
       },
+      title: 'La Venta',
       map: map,
       icon: icon
     })
 
     var marker19 = new google.maps.Marker({
       position: {
-        lat: 19.653832,
-        lng: -99.097183
+        lat: 17.982814,
+        lng: -93.378033
       },
+      title: 'Cárdenas',
       map: map,
       icon: icon
     })
 
     var marker20 = new google.maps.Marker({
       position: {
-        lat: 19.675518,
-        lng: -99.072233
+        lat: 17.985055,
+        lng: -92.831070
       },
+      title: 'Cima 1 (Dos Montes)',
+      map: map,
+      icon: icon
+    })
+
+    var marker20 = new google.maps.Marker({
+      position: {
+        lat: 18.025148,
+        lng: -92.905745
+      },
+      title: 'Ciudad Industrial 1',
+      map: map,
+      icon: icon
+    })
+
+    var marker20 = new google.maps.Marker({
+      position: {
+        lat: 17.988809,
+        lng: -92.949025
+      },
+      title: 'Kronos 1',
       map: map,
       icon: icon
     })
 
     var marker21 = new google.maps.Marker({
       position: {
-        lat: 19.675518,
-        lng: -99.072233
+        lat: 17.966665,
+        lng: -92.927914
       },
+      title: 'Ultra 1',
       map: map,
       icon: icon
     })
 
     var marker22 = new google.maps.Marker({
       position: {
-        lat: 19.817719,
-        lng: -99.864743
+        lat: 17.976976,
+        lng: -92.973445
       },
+      title: 'Ultra 2',
       map: map,
       icon: icon
     })
 
     var marker23 = new google.maps.Marker({
       position: {
-        lat: 18.043829,
-        lng: -92.904052
+        lat: 18.000200,
+        lng: -92.938585
       },
+      title: 'Promos 1',
       map: map,
       icon: icon
     })
@@ -386,45 +429,290 @@ $(document).ready(function () {
 
     var marker24 = new google.maps.Marker({
       position: {
-        lat: 18.125192,
-        lng: -92.864193
+        lat: 18.019896,
+        lng: -92.920640
       },
+      title: 'Kronos 2 (Tierra Colorada)',
       map: map,
       icon: icon
     })
 
     var marker25 = new google.maps.Marker({
       position: {
-        lat: 18.006126,
-        lng: -92.948128
+        lat: 17.985140,
+        lng: -93.003349
       },
+      title: 'Promos 2 (Loma de Caballo)',
       map: map,
       icon: icon
     })
 
     var marker26 = new google.maps.Marker({
       position: {
-        lat: 18.006521,
-        lng: -92.94812
+        lat: 17.988653,
+        lng: -92.966417
       },
+      title: 'Villa Sam´s Tab. (Avitec)',
       map: map,
       icon: icon
     })
 
     var marker27 = new google.maps.Marker({
       position: {
-        lat: 17.996069,
-        lng: -92.93667
+        lat: 18.001616,
+        lng: -92.927010
       },
+      title: 'Casa Blanca',
       map: map,
       icon: icon
     })
 
     var marker28 = new google.maps.Marker({
       position: {
-        lat: 17.984593,
-        lng: -92.92567
+        lat: 17.978612,
+        lng: -92.939064
       },
+      title: 'Deportiva (Aurrerá)',
+      map: map,
+      icon: icon
+    })
+
+    var marker29 = new google.maps.Marker({
+      position: {
+        lat: 18.106587,
+        lng: -92.865675
+      },
+      title: 'Ciudad Industrial 2',
+      map: map,
+      icon: icon
+    })
+
+    var marker30 = new google.maps.Marker({
+      position: {
+        lat: 17.981839,
+        lng: -93.160396
+      },
+      title: 'Cima 2 (Boca Limón)',
+      map: map,
+      icon: icon
+    })
+
+    var marker31 = new google.maps.Marker({
+      position: {
+        lat: 17.981839,
+        lng: -93.160396
+      },
+      title: 'Cima 3 (Miraflores)',
+      map: map,
+      icon: icon
+    })
+
+    var marker32 = new google.maps.Marker({
+      position: {
+        lat: 17.981839,
+        lng: -93.160396
+      },
+      title: 'Cima 4',
+      map: map,
+      icon: icon
+    })
+
+    var marker33 = new google.maps.Marker({
+      position: {
+        lat: 18.410119,
+        lng: -93.214154
+      },
+      title: 'Villa Paraiso',
+      map: map,
+      icon: icon
+    })
+
+    var marker34 = new google.maps.Marker({
+      position: {
+        lat: 19.636136,
+        lng: -99.098706
+      },
+      title: 'Coacalco',
+      map: map,
+      icon: icon
+    })
+
+    var marker35 = new google.maps.Marker({
+      position: {
+        lat: 19.638710,
+        lng: -99.167195
+      },
+      title: 'Tultitlán',
+      map: map,
+      icon: icon
+    })
+
+    var marker36 = new google.maps.Marker({
+      position: {
+        lat: 19.583413,
+        lng: -98.920684
+      },
+      title: 'Tezoyuca',
+      map: map,
+      icon: icon
+    })
+
+    var marker37 = new google.maps.Marker({
+      position: {
+        lat: 19.686500,
+        lng: -99.186693
+      },
+      title: 'Xhala',
+      map: map,
+      icon: icon
+    })
+
+    var marker38 = new google.maps.Marker({
+      position: {
+        lat: 19.422114,
+        lng: -98.903158
+      },
+      title: 'San Vicente',
+      map: map,
+      icon: icon
+    })
+
+    var marker39 = new google.maps.Marker({
+      position: {
+        lat: 19.801854,
+        lng: -99.865879,
+      },
+      title: 'Atlacomulco',
+      map: map,
+      icon: icon
+    })
+
+    var marker40 = new google.maps.Marker({
+      position: {
+        lat: 18.956598,
+        lng: -99.591390,
+      },
+      title: 'Tenancingo',
+      map: map,
+      icon: icon
+    })
+
+    var marker41 = new google.maps.Marker({
+      position: {
+        lat: 19.820898,
+        lng: -99.080342
+      },
+      title: 'Zumpango',
+      map: map,
+      icon: icon
+    })
+
+    var marker42 = new google.maps.Marker({
+      position: {
+        lat: 19.413411,
+        lng: -98.917903
+      },
+      title: 'San Vicente 2',
+      map: map,
+      icon: icon
+    })
+
+    var marker43 = new google.maps.Marker({
+      position: {
+        lat: 19.831553,
+        lng: -99.214419
+      },
+      title: 'Huehuetoca',
+      map: map,
+      icon: icon
+    })
+
+    var marker44 = new google.maps.Marker({
+      position: {
+        lat: 19.850841,
+        lng: -98.975046
+      },
+      title: 'Tizayuca 1',
+      map: map,
+      icon: icon
+    })
+
+    var marker45 = new google.maps.Marker({
+      position: {
+        lat: 19.837011,
+        lng: -98.955317
+      },
+      title: 'Tizayuca 2',
+      map: map,
+      icon: icon
+    })
+
+    var marker46 = new google.maps.Marker({
+      position: {
+        lat: 20.078683,
+        lng: -99.308486
+      },
+      title: 'Tula Iturbe',
+      map: map,
+      icon: icon
+    })
+
+    var marker47 = new google.maps.Marker({
+      position: {
+        lat: 20.058461,
+        lng: -99.291539
+      },
+      title: 'Tula el Llano',
+      map: map,
+      icon: icon
+    })
+
+    var marker48 = new google.maps.Marker({
+      position: {
+        lat: 19.629267,
+        lng: -99.133546
+      },
+      title: 'Eje 3',
+      map: map,
+      icon: icon
+    })
+
+    var marker49 = new google.maps.Marker({
+      position: {
+        lat: 20.045532,
+        lng: -99.340486
+      },
+      title: 'Tula Jalpa',
+      map: map,
+      icon: icon
+    })
+
+    var marker50 = new google.maps.Marker({
+      position: {
+        lat: 19.649497,
+        lng: -99.077328
+      },
+      title: 'Presidentes',
+      map: map,
+      icon: icon
+    })
+
+    var marker51 = new google.maps.Marker({
+      position: {
+        lat: 19.692921,
+        lng: -99.259075
+      },
+      title: 'Tepotzotlan',
+      map: map,
+      icon: icon
+    })
+
+    var marker52 = new google.maps.Marker({
+      position: {
+        lat: 19.692921,
+        lng: -99.259075
+      },
+      title: 'Tepotzotlan',
       map: map,
       icon: icon
     })
