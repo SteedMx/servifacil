@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   var misionLink = document.querySelector('#mvv-link')
   var misionModal = document.querySelector('#mvv-modal')
   var misionClose = document.querySelector('#mvv-close')
@@ -774,7 +775,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: 'POST',
-      url: 'http://localhost:3000/contact',
+      url: 'http://localhost:8082/contact',
       data: data,
       success: success,
       error: error,
