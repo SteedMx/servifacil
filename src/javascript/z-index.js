@@ -98,10 +98,12 @@ $(document).ready(function () {
   var mfactModal = document.querySelector('#mfact-modal')
   var mfactClose = document.querySelector('#mclose')
 
+  /*
   mfactLink.addEventListener('click', function (event) {
     event.preventDefault()
     mfactModal.dataset.active = 'true'
   })
+  */
 
   mclose.addEventListener('click', function () {
     mfactModal.dataset.active = 'false'
