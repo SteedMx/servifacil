@@ -775,7 +775,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: 'POST',
-      url: 'http://localhost:3000/contact',
+      url: 'http://steed.mx:8082/contact',
       data: data,
       success: success,
       error: error,

@@ -8,8 +8,7 @@ const cors = require('cors')
 const resolve = require('path').resolve
 
 const Message = require('./lib/message')
-const Mandrill = require('./lib/mandrill')
-const mailgun = require('./lib/mailgun')
+const nodemailer = require('nodemailer')
 
 const app = express()
 const files = () => express.static(resolve(__dirname, 'public'))
@@ -33,17 +32,78 @@ app.get(/metodos(.html)?$/, (req, res) => {
 })
 
 app.post(/\/contact$/, (req, res) => {
+
+  console.log('sending mail!');
+
   const body = req.body
-  const msg = mailgun.contactMailHtml(body)
-  mailgun.sendMail(msg)
+
+	// Create the transporter with the required configuration for Gmail
+	// change the user and pass !
+	var transporter = nodemailer.createTransport({
+			host: 'smtp.zoho.com',
+			port: 465,
+			secure: true, // use SSL
+			auth: {
+					user: 'servifacil@steed.mx',
+					pass: 'Servifacil2016'
+			}
+	});
+
+	// setup e-mail data, even with unicode symbols
+	var mailOptions = {
+			from: '"Sitio Web Servifácil " <servifacil@steed.mx>', // sender address (who sends)
+			to: 'comunicaciones@servifacil.com.mx, matias@steed.mx', // list of receivers (who receives)
+			subject: 'Forma de contacto del sitio ', // Subject line
+			html: '<b>Mensaje enviado desde la forma de contacto en www.servifacil.com.mx </b><br> Nombre del cliente: ' + body.name + '<br> Correo electrónico: ' + body.email + '<br> Asunto: ' + body.subject + '<br> Mensaje: ' + body.message// html body
+	};
+
+	// send mail with defined transport object
+	transporter.sendMail(mailOptions, function(error, info){
+			if(error){
+					return console.log(error);
+			}
+
+			console.log('Message sent: ' + info.response);
+	});
+
   res.redirect('/')
 })
 
 app.post(/\/cv$/, (req, res) => {
   const body = req.body
-  const msg = mailgun.cvMailHtml(body)
-  mailgun.sendMail(msg)
+
+	// Create the transporter with the required configuration for Gmail
+	// change the user and pass !
+	var transporter = nodemailer.createTransport({
+			host: 'smtp.zoho.com',
+			port: 465,
+			secure: true, // use SSL
+			auth: {
+					user: 'servifacil@steed.mx',
+					pass: 'Servifacil2016'
+			}
+	});
+
+	// setup e-mail data, even with unicode symbols
+	var mailOptions = {
+			from: '"Sitio Web Servifácil " <servifacil@steed.mx>', // sender address (who sends)
+			// to: 'comunicaciones@servifacil.com.mx, matias@steed.mx', // list of receivers (who receives)
+			to: 'matias@steed.mx', // list of receivers (who receives)
+			subject: 'Interesado en bolsa de trabajo', // Subject line
+			html: '<b>Mensaje enviado desde la bolsa de trabajo en www.servifacil.com.mx <br> Nombre del interesado: </b>' + body.name + '<b><br> Edad: </b>' + body.age + '<b><br> Género: </b>' + body.sex + '<b><br> Ciudad: </b>' + body.city + '<b><br> Estado: </b>' + body.state + '<b><br> Teléfono: </b>' + body.telephone + '<b><br> Celular: </b>' + body.cellular + '<b><br> Correo electrónico: </b>' + body.email + '<b><br> Vacante deseada: </b>' + body.position + '<b><br> Sueldo mensuale deseado: </b>' + body.wage + '<b><br> Grado de estudios: </b>' + body.school + '<b><br> Disponibilidad de horario: </b>' + body.schedule + '<b><br> Disponibilidad de viajar: </b>' + body.travel + '<b><br> Comentarios: </b>' + body.comments
+	};
+
+	// send mail with defined transport object
+	transporter.sendMail(mailOptions, function(error, info){
+			if(error){
+					return console.log(error);
+			}
+
+			console.log('Message sent: ' + info.response);
+	});
+
   res.redirect('/')
+
 })
 
 app.post(/\/factura$/, (req, res) => {
