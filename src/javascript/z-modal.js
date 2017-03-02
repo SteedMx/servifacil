@@ -49,6 +49,7 @@ valesLink.addEventListener('click', function (event) {
   }
 })
 
+/*
 valesModal.addEventListener('click', function (event) {
   event.preventDefault()
 
@@ -56,6 +57,7 @@ valesModal.addEventListener('click', function (event) {
     valesModal.dataset.active = 'false'
   }
 })
+*/
 
 var $nav = $('.nav')
 
