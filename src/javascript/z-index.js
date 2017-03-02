@@ -210,8 +210,8 @@ $(document).ready(function () {
 
     var marker4 = new google.maps.Marker({
       position: {
-        lat: 20.0559626,
-        lng: -99.3030389
+        lat: 18.366101,
+        lng: -95.776162
       },
       title: 'Bravo Grande',
       map: map,
@@ -270,8 +270,8 @@ $(document).ready(function () {
 
     var marker10 = new google.maps.Marker({
       position: {
-        lat: 17.956801,
-        lng: -94.909119
+        lat: 17.999781,
+        lng: -94.921667
       },
       title: '9836 Hojitas',
       map: map,
@@ -490,8 +490,8 @@ $(document).ready(function () {
 
     var marker30 = new google.maps.Marker({
       position: {
-        lat: 17.981839,
-        lng: -93.160396
+        lat: 17.926828,
+        lng: -93.143844
       },
       title: '9790 Cima 2 (Boca Limón)',
       map: map,
@@ -500,8 +500,8 @@ $(document).ready(function () {
 
     var marker31 = new google.maps.Marker({
       position: {
-        lat: 17.981839,
-        lng: -93.160396
+        lat: 17.900066,
+        lng: -92.757502
       },
       title: '11337 Cima 3 (Miraflores)',
       map: map,
@@ -710,10 +710,190 @@ $(document).ready(function () {
 
     var marker52 = new google.maps.Marker({
       position: {
-        lat: 19.692921,
-        lng: -99.259075
+        lat: 19.372179,
+        lng: -98.946245
       },
-      title: 'Tepotzotlan',
+      title: 'Los Reyes',
+      map: map,
+      icon: icon
+    })
+
+    var marker53 = new google.maps.Marker({
+      position: {
+        lat: 19.309121,
+        lng: -99.586966
+      },
+      title: 'Tototelpec',
+      map: map,
+      icon: icon
+    })
+
+    var marker54 = new google.maps.Marker({
+      position: {
+        lat: 19.686475,
+        lng: -99.186622
+      },
+      title: 'Xhala',
+      map: map,
+      icon: icon
+    })
+
+    var marker55 = new google.maps.Marker({
+      position: {
+        lat: 18.145524,
+        lng: -94.472091
+      },
+      title: 'Oteapan 2',
+      map: map,
+      icon: icon
+    })
+
+    var marker56 = new google.maps.Marker({
+      position: {
+        lat: 18.140178,
+        lng: -94.518243
+      },
+      title: 'Oteapan 3 (Cereso 1)',
+      map: map,
+      icon: icon
+    })
+
+    var marker57 = new google.maps.Marker({
+      position: {
+        lat: 18.151662,
+        lng: -94.446736
+      },
+      title: 'Calzadas 2 (Malecón)',
+      map: map,
+      icon: icon
+    })
+
+    var marker58 = new google.maps.Marker({
+      position: {
+        lat: 18.151667,
+        lng: -94.395894
+      },
+      title: 'Allende (Trabajadores Mexicanos)',
+      map: map,
+      icon: icon
+    })
+
+    var marker59 = new google.maps.Marker({
+      position: {
+        lat: 19.155819,
+        lng: -96.111081
+      },
+      title: 'Virginia (Walmart-Ver)',
+      map: map,
+      icon: icon
+    })
+
+    var marker60 = new google.maps.Marker({
+      position: {
+        lat: 17.887961,
+        lng: -94.101823
+      },
+      title: 'Calzadas 6 (La Sabana)',
+      map: map,
+      icon: icon
+    })
+
+    var marker61 = new google.maps.Marker({
+      position: {
+        lat: 18.012075,
+        lng: -94.547788
+      },
+      title: 'Paquital 1',
+      map: map,
+      icon: icon
+    })
+
+    var marker62 = new google.maps.Marker({
+      position: {
+        lat: 18.370942,
+        lng: -95.803817
+      },
+      title: 'Calzadas 9',
+      map: map,
+      icon: icon
+    })
+
+    var marker63 = new google.maps.Marker({
+      position: {
+        lat: 17.990117,
+        lng: -94.562601
+      },
+      title: 'Paquital 2',
+      map: map,
+      icon: icon
+    })
+
+    var marker64 = new google.maps.Marker({
+      position: {
+        lat: 18.125986,
+        lng: -94.435250
+      },
+      title: 'Villa-Coatza',
+      map: map,
+      icon: icon
+    })
+
+    var marker65 = new google.maps.Marker({
+      position: {
+        lat: 19.399767,
+        lng: -96.360356
+      },
+      title: 'Calzadas 7 (Ursulo Galván)',
+      map: map,
+      icon: icon
+    })
+
+    var marker66 = new google.maps.Marker({
+      position: {
+        lat: 18.372281,
+        lng: -95.754802
+      },
+      title: 'Calzadas 8',
+      map: map,
+      icon: icon
+    })
+
+    var marker67 = new google.maps.Marker({
+      position: {
+        lat: 17.921334,
+        lng: -94.930870
+      },
+      title: 'Sayula 1',
+      map: map,
+      icon: icon
+    })
+
+    var marker68 = new google.maps.Marker({
+      position: {
+        lat: 17.992305,
+        lng: -94.568003
+      },
+      title: 'Mina',
+      map: map,
+      icon: icon
+    })
+
+    var marker69 = new google.maps.Marker({
+      position: {
+        lat: 17.960074,
+        lng: -94.914393
+      },
+      title: 'Acayucan',
+      map: map,
+      icon: icon
+    })
+
+    var marker70 = new google.maps.Marker({
+      position: {
+        lat: 17.899473,
+        lng: -94.099155
+      },
+      title: '?',
       map: map,
       icon: icon
     })
