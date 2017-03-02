@@ -52,7 +52,7 @@ app.post(/\/contact$/, (req, res) => {
 	// setup e-mail data, even with unicode symbols
 	var mailOptions = {
 			from: '"Sitio Web Servifácil " <servifacil@steed.mx>', // sender address (who sends)
-			to: 'comunicaciones@servifacil.com.mx, matias@steed.mx', // list of receivers (who receives)
+			to: 'clientes@servifacil.com.mx, matias@steed.mx', // list of receivers (who receives)
 			subject: 'Forma de contacto del sitio ', // Subject line
 			html: '<b>Mensaje enviado desde la forma de contacto en www.servifacil.com.mx </b><br> Nombre del cliente: ' + body.name + '<br> Correo electrónico: ' + body.email + '<br> Asunto: ' + body.subject + '<br> Mensaje: ' + body.message// html body
 	};
@@ -87,7 +87,7 @@ app.post(/\/cv$/, (req, res) => {
 	// setup e-mail data, even with unicode symbols
 	var mailOptions = {
 			from: '"Sitio Web Servifácil " <servifacil@steed.mx>', // sender address (who sends)
-			to: 'comunicaciones@servifacil.com.mx, matias@steed.mx', // list of receivers (who receives)
+			to: 'gerenciarh@servifacil.com.mx, reclutamientoct@servifacil.com.mx, rechumanosdf@servifacil.com.mx, matias@steed.mx', // list of receivers (who receives)
 			subject: 'Interesado en bolsa de trabajo', // Subject line
 			html: '<b>Mensaje enviado desde la bolsa de trabajo en www.servifacil.com.mx <br> Nombre del interesado: </b>' + body.name + '<b><br> Edad: </b>' + body.age + '<b><br> Género: </b>' + body.sex + '<b><br> Ciudad: </b>' + body.city + '<b><br> Estado: </b>' + body.state + '<b><br> Teléfono: </b>' + body.telephone + '<b><br> Celular: </b>' + body.cellular + '<b><br> Correo electrónico: </b>' + body.email + '<b><br> Vacante deseada: </b>' + body.position + '<b><br> Sueldo mensuale deseado: </b>' + body.wage + '<b><br> Grado de estudios: </b>' + body.school + '<b><br> Disponibilidad de horario: </b>' + body.schedule + '<b><br> Disponibilidad de viajar: </b>' + body.travel + '<b><br> Comentarios: </b>' + body.comments
 	};
