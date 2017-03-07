@@ -1,12 +1,24 @@
 header(class='hero')
   div(class='hero__container')
-    h2(class='hero__title') FORMAS DE PAGO
+    h2(class='hero__title') PRODUCTOS
 
     div(class='hero__float')
-      div(class='hero__section')
-        img(class='hero__image' src='images/card.png')
-        a(class='hero__label', href='#debit') DÉBITO
+      a(class='hero__label', id='sm-debit2', href='#sm-debit')
+        div(class='hero__section')
+          img(class='hero__image' src='images/card.png')
+          p DÉBITO
 
+      a(class='hero__label', id='sm-credit2', href='#sm-credit')
+        div(class='hero__section')
+          img(class='hero__image' src='images/card.png')
+          p CRÉDITO
+
+      a(class='hero__label', id='sm-vales2', href='#sm-vales')
+        div(class='hero__section')
+          img(class='hero__image' src='images/vales.png')
+          p SERVIVALES
+
+//
       div(class='hero__section')
         img(class='hero__image', src='images/card.png')
         a(class='hero__label', href='#credit') CRÉDITO

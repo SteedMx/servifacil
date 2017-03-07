@@ -15,6 +15,7 @@
     background-color transparent
 
   &__container
+    margin-top 15px
     align-items center
     align-content center
     box-sizing border-box
@@ -23,6 +24,7 @@
     padding 0 2rem
 
   &__logo
+    max-width 200px
     display block
     text-align center
 
@@ -30,8 +32,11 @@
     color white
     text-decoration none
 
+    &:first-child
+      margin-bottom 0
+
     &:hover
       text-decoration underline
 
-  @media all and (max-width 600px)
+  @media all and (max-width 800px)
     display none

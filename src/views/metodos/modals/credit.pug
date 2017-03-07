@@ -2,7 +2,7 @@ div(class='payments__modalCredit', data-active='false')
   div(class='payments__modalCreditContainer')
     img(class='modal__backgroundWorker', src='images/worker_decoration.png')
 
-    button(class='modal__close', id='mclose')
+    button(class='modal__close', id='mclose', onclick="creditModal.dataset.active = 'false'")
       li(class="fa fa-times" aria-hidden="true")
 
     div(class='payments__modalCreditBox')
@@ -19,8 +19,6 @@ div(class='payments__modalCredit', data-active='false')
         li Asignación de NIP (Número de Identificación Personal) para sus tarjetas o códigos.
         li Suministro de combustible 24 horas, 365 días del año.
 
-      p Si está buscando una alternativa de control para la carga de su combustible y un apoyo financiero, puede completar sus datos de
-        a(class='modal__link', href='http://www.servifacil.com.mx/cms/?p=592') Solicitud de Crédito
-        | y, a la brevedad, un ejecutivo se pondrá en contacto y le brindará información detallada.
+      p Si está buscando una alternativa de control para la carga de su combustible y un apoyo financiero, puede enviarnos un correo electrónico a través de nuestro módulo de #[a(href="http://servifacil.com.mx:8082/index.html#contact", target="_top") Contacto], a la brevedad, un ejecutivo se pondrá en contacto y le brindará información detallada.
       p El consumo mínimo para solicitar crédito es de $50,000.00 MXN y el mismo se otorgará después de estudiar la documentación solicitada y podrá ser utilizado después de la firma del contrato correspondiente.
       p El pago de las facturas de crédito podrá realizarse mediante cheque, efectivo o transferencia bancaria.

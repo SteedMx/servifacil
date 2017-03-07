@@ -10,6 +10,7 @@ debitLink.addEventListener('click', function (event) {
   }
 })
 
+/*
 debitModal.addEventListener('click', function (event) {
   event.preventDefault()
 
@@ -17,6 +18,7 @@ debitModal.addEventListener('click', function (event) {
     debitModal.dataset.active = 'false'
   }
 })
+*/
 
 var creditLink = document.querySelector('#sm-credit2')
 var creditModal = document.querySelector('.payments__modalCredit')
@@ -30,6 +32,7 @@ creditLink.addEventListener('click', function (event) {
   }
 })
 
+/*
 creditModal.addEventListener('click', function (event) {
   event.preventDefault()
 
@@ -37,6 +40,7 @@ creditModal.addEventListener('click', function (event) {
     creditModal.dataset.active = 'false'
   }
 })
+*/
 
 var valesLink = document.querySelector('#sm-vales2')
 var valesModal = document.querySelector('.payments__modalVales')

@@ -213,7 +213,7 @@ $(document).ready(function () {
         lat: 18.366101,
         lng: -95.776162
       },
-      title: 'Bravo Grande',
+      title: '1013 Bravo Grande',
       map: map,
       icon: icon
     })
@@ -513,7 +513,7 @@ $(document).ready(function () {
         lat: 17.981839,
         lng: -93.160396
       },
-      title: 'Cima 4',
+      title: '13022 Cima 4',
       map: map,
       icon: icon
     })
@@ -523,7 +523,7 @@ $(document).ready(function () {
         lat: 18.410119,
         lng: -93.214154
       },
-      title: 'Villa Paraiso',
+      title: '13205 Villa Paraiso',
       map: map,
       icon: icon
     })
@@ -603,7 +603,7 @@ $(document).ready(function () {
         lat: 19.820898,
         lng: -99.080342
       },
-      title: 'Zumpango',
+      title: '12432 Zumpango',
       map: map,
       icon: icon
     })
@@ -613,7 +613,7 @@ $(document).ready(function () {
         lat: 19.413411,
         lng: -98.917903
       },
-      title: 'San Vicente 2',
+      title: '12980 San Vicente 2',
       map: map,
       icon: icon
     })
@@ -623,7 +623,7 @@ $(document).ready(function () {
         lat: 19.831553,
         lng: -99.214419
       },
-      title: 'Huehuetoca',
+      title: '12990 Huehuetoca',
       map: map,
       icon: icon
     })
@@ -683,7 +683,7 @@ $(document).ready(function () {
         lat: 20.045532,
         lng: -99.340486
       },
-      title: 'Tula Jalpa',
+      title: '12433 Tula Jalpa',
       map: map,
       icon: icon
     })
@@ -693,7 +693,7 @@ $(document).ready(function () {
         lat: 19.649497,
         lng: -99.077328
       },
-      title: 'Presidentes',
+      title: '12513 Presidentes',
       map: map,
       icon: icon
     })
@@ -703,7 +703,7 @@ $(document).ready(function () {
         lat: 19.692921,
         lng: -99.259075
       },
-      title: 'Tepotzotlan',
+      title: '12791 Tepotzotlan',
       map: map,
       icon: icon
     })
@@ -713,7 +713,7 @@ $(document).ready(function () {
         lat: 19.372179,
         lng: -98.946245
       },
-      title: 'Los Reyes',
+      title: '13135 Los Reyes',
       map: map,
       icon: icon
     })
@@ -723,7 +723,7 @@ $(document).ready(function () {
         lat: 19.309121,
         lng: -99.586966
       },
-      title: 'Tototelpec',
+      title: '13193 Tototelpec',
       map: map,
       icon: icon
     })
@@ -733,7 +733,7 @@ $(document).ready(function () {
         lat: 19.686475,
         lng: -99.186622
       },
-      title: 'Xhala',
+      title: '9517 Xhala',
       map: map,
       icon: icon
     })
@@ -743,7 +743,7 @@ $(document).ready(function () {
         lat: 18.145524,
         lng: -94.472091
       },
-      title: 'Oteapan 2',
+      title: '8971 Oteapan 2',
       map: map,
       icon: icon
     })
@@ -753,7 +753,7 @@ $(document).ready(function () {
         lat: 18.140178,
         lng: -94.518243
       },
-      title: 'Oteapan 3 (Cereso 1)',
+      title: '8221 Oteapan 3 (Cereso 1)',
       map: map,
       icon: icon
     })
@@ -763,7 +763,7 @@ $(document).ready(function () {
         lat: 18.151662,
         lng: -94.446736
       },
-      title: 'Calzadas 2 (Malecón)',
+      title: '7967 Calzadas 2 (Malecón)',
       map: map,
       icon: icon
     })
@@ -773,7 +773,7 @@ $(document).ready(function () {
         lat: 18.151667,
         lng: -94.395894
       },
-      title: 'Allende (Trabajadores Mexicanos)',
+      title: '7380 Allende (Trabajadores Mexicanos)',
       map: map,
       icon: icon
     })
@@ -783,7 +783,7 @@ $(document).ready(function () {
         lat: 19.155819,
         lng: -96.111081
       },
-      title: 'Virginia (Walmart-Ver)',
+      title: '6873 Virginia (Walmart-Ver)',
       map: map,
       icon: icon
     })
@@ -793,7 +793,7 @@ $(document).ready(function () {
         lat: 17.887961,
         lng: -94.101823
       },
-      title: 'Calzadas 6 (La Sabana)',
+      title: '6693 Calzadas 6 (La Sabana)',
       map: map,
       icon: icon
     })
@@ -803,7 +803,7 @@ $(document).ready(function () {
         lat: 18.012075,
         lng: -94.547788
       },
-      title: 'Paquital 1',
+      title: '6139 Paquital 1',
       map: map,
       icon: icon
     })
@@ -813,7 +813,7 @@ $(document).ready(function () {
         lat: 18.370942,
         lng: -95.803817
       },
-      title: 'Calzadas 9',
+      title: '5852 Calzadas 9',
       map: map,
       icon: icon
     })
@@ -823,7 +823,7 @@ $(document).ready(function () {
         lat: 17.990117,
         lng: -94.562601
       },
-      title: 'Paquital 2',
+      title: '5843 Paquital 2',
       map: map,
       icon: icon
     })
@@ -833,7 +833,7 @@ $(document).ready(function () {
         lat: 18.125986,
         lng: -94.435250
       },
-      title: 'Villa-Coatza',
+      title: '5624 Villa-Coatza',
       map: map,
       icon: icon
     })
@@ -843,7 +843,7 @@ $(document).ready(function () {
         lat: 19.399767,
         lng: -96.360356
       },
-      title: 'Calzadas 7 (Ursulo Galván)',
+      title: '5402 Calzadas 7 (Ursulo Galván)',
       map: map,
       icon: icon
     })
@@ -853,7 +853,7 @@ $(document).ready(function () {
         lat: 18.372281,
         lng: -95.754802
       },
-      title: 'Calzadas 8',
+      title: '5291 Calzadas 8',
       map: map,
       icon: icon
     })
@@ -863,7 +863,7 @@ $(document).ready(function () {
         lat: 17.921334,
         lng: -94.930870
       },
-      title: 'Sayula 1',
+      title: '4982 Sayula 1',
       map: map,
       icon: icon
     })
@@ -873,7 +873,7 @@ $(document).ready(function () {
         lat: 17.992305,
         lng: -94.568003
       },
-      title: 'Mina',
+      title: '4094 Mina',
       map: map,
       icon: icon
     })
@@ -883,17 +883,7 @@ $(document).ready(function () {
         lat: 17.960074,
         lng: -94.914393
       },
-      title: 'Acayucan',
-      map: map,
-      icon: icon
-    })
-
-    var marker70 = new google.maps.Marker({
-      position: {
-        lat: 17.899473,
-        lng: -94.099155
-      },
-      title: '?',
+      title: '4093 Acayucan',
       map: map,
       icon: icon
     })

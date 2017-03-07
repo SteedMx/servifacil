@@ -2,16 +2,14 @@ div(class='payments__modalDebit', data-active='false')
   div(class='payments__modalDebitContainer')
     img(class='modal__backgroundWorker', src='images/worker_decoration.png')
 
-    button(class='modal__close', id='mclose')
+    button(class='modal__close', id='mclose', onclick="debitModal.dataset.active = 'false'")
       li(class="fa fa-times" aria-hidden="true")
 
     div(class='payments__modalDebitBox')
       h2(class='modal__title') Servifácil débito
-      p En este producto se ofrecen todas las ventajas del control automatizado. Su depósito es administrado por el Sistema de Control de Flotillas, que va facturando sus consumos en el periodo solicitado, y generando saldos actualizados conforme usted realiza sus pagos. El medio para realizar la carga de combustible es a través de tarjetas  de banda magnética con NIP o códigos de barra, y esta información genera reportes en la
-        a(class='modal__link' href='http://sfsct.no-ip.org/fw/login.aspx') página web
-      | con la siguiente información: marca y tipo de vehículo, número económico, placas, fecha y hora de la carga, folio de despacho, consumo en litros, y en pesos. Además puede aplicar  restricciones a sus vehículos con límites en horario, litros, días específicos.
+      p En este producto se ofrecen todas las ventajas del control automatizado. Su depósito es administrado por el Sistema de Control de Flotillas, que va facturando sus consumos en el periodo solicitado, y generando saldos actualizados conforme usted realiza sus pagos. El medio para realizar la carga de combustible es a través de tarjetas de banda magnética con NIP o códigos de barra, y esta información genera reportes en nuestra página web con la siguiente información: marca y tipo de vehículo, número económico, placas, fecha y hora de la carga, folio de despacho, consumo en litros, y en pesos. Además puede aplicar restricciones a sus vehículos con límites en horario, litros, días específicos.
 
-      h3 Qué se requiere?
+      h3 ¿Qué se requiere?
       ul
         li Depósito en garantía a la cuenta de Servicio Fácil del Sureste S.A. de C.V.
         li Datos fiscales del cliente para facturar (Cédula RFC).
@@ -23,7 +21,7 @@ div(class='payments__modalDebit', data-active='false')
       h3 Ventajas
       ul
         li Control automatizado de carga con tarjetas de banda magnética o código de barras.
-        li Reporte en página web, por cad avehículo y por estación de servicio.
+        li Reporte en página web, por cada vehículo y por estación de servicio.
         li Consulta vía internet en tiempo real
         li Restricciones de acuerdo con sus necesidades, para un mejor control de su combustible por unidad.
 
@@ -40,7 +38,15 @@ div(class='payments__modalDebit', data-active='false')
         li La factura electrónica se envía a la dirección de correo electrónico que nos indique.
         li Para mantener saldo vigente, deberá cubrir con el monto total de sus facturas a las cuentas que correspondan cada una (depósito en cuenta y/o transferencia electrónica).
         li Enviar comprobantes de pago, y llamar para confirmar su aplicación al depto. de Crédito y Cobranza (921) 218 6738 ext. 150, 155, 180.
-        li Todas las cargas generan reportes de consumos y saldos, mismos que puede consultar haciendo click
-          a(class='modal__link', href='http://sfsct.no-ip.org/fw/login.aspx') aqui
-          | con su número de cliente.
-        li Al inicio de sus cargas debe llamar al (921) 218 6738 ext 140, 142, para registrar su contraseña.
+        li Todas las cargas generan reportes de consumos y saldos, mismos que puede consultar ingresando al módulo de Flotillas con su número de cliente.
+        li Al inicio de sus cargas debe llamar al (921) 218 6738 ext. 140, 142, para registrar su contraseña.
+
+      h3 Contáctanos
+      p
+          | Zona Valle de México:&nbsp
+          a(href='mailto:jefventasdf@servifacil.com.mx?Subject=Interesado%20en%20tarjeta%20de%20débito', target='_top') jefventas@servifacil.com.mx
+          | &nbsp/ 55 40449350
+      p
+          | Zona Sureste:&nbsp
+          a(href='mailto:gestiondeservicios@servifacil.com.mx?Subject=Interesado%20en%20tarjeta%20de%20débito', target='_top') jefventas@servifacil.com.mx
+          | &nbsp/ 921 14 86219

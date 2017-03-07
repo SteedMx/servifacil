@@ -2,7 +2,7 @@ div(class='payments__modalVales', data-active='false')
   div(class='payments__modalValesContainer')
     img(class='modal__backgroundWorker', src='images/worker_decoration.png')
 
-    button(class='modal__close', id='mclose')
+    button(class='modal__close', id='mclose', onclick="valesModal.dataset.active = 'false'")
       li(class="fa fa-times" aria-hidden="true")
 
     div(class='payments__modalValesBox')
@@ -22,11 +22,11 @@ div(class='payments__modalVales', data-active='false')
       p
         strong Con la finalidad de cumplir con lo establecido en la Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita, es necesario que usted llene el archivo en pdf adjunto (según corresponda: persona moral o física) y lo entregue, junto con la documentación allí requerida, en las oficinas administrativas de Servifácil o en la estación de servicio donde normalmente adquiere sus vales.  De lo contrario, no se les podrán vender.
 
-      a(href='/DVM-F-10_Personas-MoralesServivales_Rev0_11Dic13.pdf', download='')
+      a(href='/SF-RE-VN-16_Personas Morales Servivales_Rev01_Mar17.pdf', download='')
         strong Descargar PDF  persona moral
 
       br
-      a(href='/DVM-F-11_PersonasF%C3%ADsicasServivales_Rev0_11Dic13.pdf', download='')
+      a(href='/SF-RE-VN-17_Personas Físicas Servivales_Rev01_Mar17.pdf', download='')
         strong Descargar pdf persona física
 
       //
