@@ -3,6 +3,24 @@ $(document).ready(function () {
   var misionModal = document.querySelector('#mvv-modal')
   var misionClose = document.querySelector('#mvv-close')
 
+  /*
+  var navbarloca = document.querySelector('.nav')
+  console.log(navbarloca)
+
+  $(document).on('scroll', function (e) {
+    navbarloca.data-fixed = 'true'
+    console.log('uyuyuy')
+  });
+  */
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= 50) {
+      $('.nav').css('background-color','#c33');
+    } else {
+      $('.nav').css('background-color','transparent');
+    }
+  });
+
   misionLink.addEventListener('click', function (event) {
     event.preventDefault()
     misionModal.dataset.active = 'true'

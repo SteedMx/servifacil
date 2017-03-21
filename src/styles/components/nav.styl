@@ -1,54 +1,44 @@
 .nav
-  background-color rgba(204, 51, 51, 1)
-  display none
-  align-items center
   font-family 'Flama Basic'
-  font-weight bold
-  overflow: visible
-  position: relative
-  height 105px
+  position fixed
+  left 0
+  top 0
+  width 100vw
+  z-index 50
+  transition all 0.25s ease
+  height 95px
+
+  /*
+  &[data-fixed='true']
+    background-color #c33
+
+  &[data-fixed='false']
+    background-color transparent
+  */
 
   &__container
-    box-sizing border-box
-    padding 1rem 2rem
-
-  &__tabs
-    align-content center
+    margin-top 15px
     align-items center
+    align-content center
+    box-sizing border-box
     display flex
-    justify-content space-between
-    list-style none
-    margin 0
-    padding 0
+    justify-content space-around
+    padding 0 2rem
 
-    #navfirst
-      margin-right 15vw
+  &__logo
+    max-width 200px
+    display block
+    text-align center
 
-    &Link
-      color white
-      font-size 1.1rem
-      text-decoration none
+  &__link
+    color white
+    text-decoration none
 
-    &Logo
-      width 150px
+    &:first-child
+      margin-bottom 0
 
-  &__tabsLogo
-    position absolute
-    z-index 2000
-    width 200px
-    margin-top -35px
-    margin-left -3vw
+    &:hover
+      text-decoration underline
 
-  @media all and (min-width 801px) and (max-width 1200px)
-    display flex
-
-    &__container
-      padding 1rem
-      width 100%
-
-  @media all and (min-width 1201px)
-    display flex
-
-    &__container
-      margin 0 auto
-      width 1200px
+  @media all and (max-width 800px)
+    display none
