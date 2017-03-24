@@ -3,15 +3,60 @@ $(document).ready(function () {
   var misionModal = document.querySelector('#mvv-modal')
   var misionClose = document.querySelector('#mvv-close')
 
-  /*
-  var navbarloca = document.querySelector('.nav')
-  console.log(navbarloca)
-
-  $(document).on('scroll', function (e) {
-    navbarloca.data-fixed = 'true'
-    console.log('uyuyuy')
+  $('#navbar__ubicanos').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top - 75
+        }, 1000);
+        return false;
+      }
+    }
   });
-  */
+
+  $('#navbar__nosotros').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top + 75
+        }, 1000);
+        return false;
+      }
+    }
+  });
+
+  $('#navbar__servicios').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top + 250
+        }, 1000);
+        return false;
+      }
+    }
+  });
+
+  $('#navbar__contacto').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top - 75
+        }, 1000);
+        return false;
+      }
+    }
+  });
+
+  $(document).on('click', '.item', function(event) {
+  });
 
   $(window).scroll(function () {
     if ($(window).scrollTop() >= 50) {
