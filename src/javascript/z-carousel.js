@@ -3,7 +3,7 @@ $(document).ready(function () {
     autoplay: true,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     responsive : [
       {
         breakpoint: 800,
@@ -22,6 +22,7 @@ $(document).ready(function () {
     ]
   })
 
+  /*
   $('.services__list').slick({
     autoplay: true,
     infinite: true,
@@ -44,12 +45,13 @@ $(document).ready(function () {
       }
     ]
   })
+  */
 
   $('.hero__carousel').slick({
-    autoplay: true,
-    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
     dots: true
   })
 })

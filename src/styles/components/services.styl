@@ -14,6 +14,8 @@
 
   &__list
     padding 2rem 0
+    display flex
+    flex-wrap wrap
 
   &__title
     border-bottom 4px solid white
@@ -39,10 +41,14 @@
     margin 0 auto
     padding 6rem 0
     text-align center
-    width 33%
+    width 20%
 
     &:hover
       cursor pointer
+
+    /* Make "Estaciones de servicio" text smaller to fit in one line
+    &:first-child
+      font-size 0.7em*/
 
     &Text
       color white
@@ -50,7 +56,7 @@
       display inline-block
       margin 0
       padding 15px
-      width 90%
+      width 81%
 
   @media all and (min-width 601px) and (max-width 800px)
     &__container
@@ -71,13 +77,15 @@
       text-align left
 
     &__list
+      /*
       align-items center
       align-content center
-      display block
-      padding 2rem 0 0 0
+      padding 2rem 0 0 0*/
+      flex-direction column
 
     &__segment
       margin 0
+      width 100%
 
       &Text
         padding 0.25rem
