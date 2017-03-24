@@ -55,16 +55,25 @@ $(document).ready(function () {
     }
   });
 
-  $(document).on('click', '.item', function(event) {
-  });
-
   $(window).scroll(function () {
-    if ($(window).scrollTop() >= 50) {
+
+    var windscroll = $(window).scrollTop();
+
+    if (windscroll >= 50) {
       $('.nav').css('background-color','#c33');
+
+      $('.anchor').each(function(i) {
+          if ($(this).position().top <= windscroll + 200) {
+              $('.nav a.active').removeClass('active');
+              $('.nav a').eq(i).addClass('active');
+          }
+      });
     } else {
       $('.nav').css('background-color','transparent');
+      $('.nav a.active').removeClass('active');
+      $('.nav a:first').addClass('active');
     }
-  });
+  }).scroll();
 
   misionLink.addEventListener('click', function (event) {
     event.preventDefault()
