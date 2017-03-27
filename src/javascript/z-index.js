@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   var misionLink = document.querySelector('#mvv-link')
   var misionModal = document.querySelector('#mvv-modal')
   var misionClose = document.querySelector('#mvv-close')
@@ -156,9 +157,11 @@ $(document).ready(function () {
 
   mgasLink.addEventListener('click', function (event) {
     event.preventDefault()
+    /*
     setTimeout(function () {
       initMap()
     }, 1000)
+    */
     mgasModal.dataset.active = 'true'
   })
 
@@ -238,6 +241,7 @@ $(document).ready(function () {
    * Map
    */
 
+  /*
   var icon = 'https://raw.githubusercontent.com/SteedMx/servifacil/master/src/images/ping.png'
   window.initMap = function () {
     // Create a map object and specify the DOM element for display.
@@ -965,6 +969,8 @@ $(document).ready(function () {
   script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDkAzNwyVOO-eiYaKszYkUuAaQN3Y9ttfA&callback=initMap'
   document.querySelector('body').appendChild(script)
 
+  */
+
   var footerForm = document.querySelector('.footer__form')
 
   footerForm.addEventListener('submit', function (event) {
@@ -1024,4 +1030,7 @@ $(document).ready(function () {
       dataType: 'json'
     })
   })
+
+  $(".se-pre-con").fadeOut("slow");;
+
 })
