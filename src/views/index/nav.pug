@@ -1,13 +1,26 @@
 nav(class='nav', data-fixed='false')
-  section(class='nav__container')
-    a(class='nav__link', href='index.html', alt='Servifacil')
-      img(class='nav__logo', src='images/logo-white.png')
+	section(class='nav__container')
+		a(class='nav__link', href='index.html', alt='Servifacil')
+			img(class='nav__logo', src='images/logo-white.png')
 
-    a(class='nav__link', data-scroll="know", id="navbar__ubicanos",  href='#know') UBICACIÓN
-    a(class='nav__link', data-scroll="us", id="navbar__nosotros", href='#us') NOSOTROS
-    a(class='nav__link', data-scroll="services", id="navbar__servicios", href='#services') SERVICIOS
-    a(class='nav__link', data-scroll="contact", id="navbar__contacto", href='#contact') CONTACTO
-    a(class='nav__link', href='/metodos.html') PRODUCTOS
-    a(class='nav__link', href='https://servifacil.ecsmexico.com:2001/facturacionweb/') FACTURACIÓN
-    a(class='nav__link', href='http://187.141.115.82/') FLOTILLAS
-    a(class='nav__link', target="_blank", href='/tabla_de_precios.pdf') PRECIOS
+		a(class='nav__link', data-scroll="know", id="navbar__ubicanos",  href='#know') UBICACIÓN
+		a(class='nav__link', data-scroll="us", id="navbar__nosotros", href='#us') NOSOTROS
+		a(class='nav__link', data-scroll="services", id="navbar__servicios", href='#services') SERVICIOS
+		a(class='nav__link', data-scroll="contact", id="navbar__contacto", href='#contact') CONTACTO
+		a(class='nav__link', href='/metodos.html') PRODUCTOS
+		a(class='nav__link', href='https://servifacil.ecsmexico.com:2001/facturacionweb/') FACTURACIÓN
+		a(class='nav__link', href='http://187.141.115.82/') FLOTILLAS
+		a(class='nav__link', target="_blank", href='/tabla_de_precios.pdf') PRECIOS
+//
+		a(class='nav__link') BUSCAR
+			script.
+				(function() {
+				var cx = '014177689589583332588:ph45a6zf9ak';
+				var gcse = document.createElement('script');
+				gcse.type = 'text/javascript';
+				gcse.async = true;
+				gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(gcse, s);
+				})();
+			gcse:search
