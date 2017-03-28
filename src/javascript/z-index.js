@@ -1033,6 +1033,7 @@ $(document).ready(function () {
 
   $(".se-pre-con").fadeOut("slow");;
 
+  /*
   window.onclick = function(event) {
     if (event.target == rsModal) {
       rsModal.dataset.active = 'false'
@@ -1063,6 +1064,35 @@ $(document).ready(function () {
     } else if (event.target == misionModal) {
       misionModal.dataset.active = 'false'
     }
+  }*/
+
+  function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
   }
+
+  var paramUs = getParameterByName('paramUs');
+  var paramUbi = getParameterByName('paramUbi');
+  var paramServ = getParameterByName('paramServ');
+  var paramCont = getParameterByName('paramCont');
+
+  setTimeout(function(){
+    if (paramUs) {
+      $('#navbar__nosotros').click();
+    } else if (paramUbi) {
+      $('#navbar__ubicanos').click();
+    } else if (paramServ) {
+      $('#navbar__servicios').click();
+    } else if (paramCont) {
+      $('#navbar__contacto').click();
+    }
+  }, 1500);
 
 })
