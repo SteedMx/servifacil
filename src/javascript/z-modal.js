@@ -1,9 +1,26 @@
 var debitLink = document.querySelector('#sm-debit2')
 var debitModal = document.querySelector('.payments__modalDebit')
+var debitModalId = document.getElementById('debitModal');
 
-console.log(324432)
+function getParameterByName(name, url) {
+	if (!url) {
+		url = window.location.href;
+	}
+	name = name.replace(/[\[\]]/g, "\\$&");
+	var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+			results = regex.exec(url);
+	if (!results) return null;
+	if (!results[2]) return '';
+	return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+var paramDebit = getParameterByName('paramDebit');
+
+if (paramDebit) {
+  debitModal.dataset.active = 'true'
+}
+
 debitLink.addEventListener('click', function (event) {
-  console.log(123456)
   event.preventDefault()
   if (debitModal.dataset.active === 'false') {
     debitModal.dataset.active = 'true'
@@ -22,6 +39,7 @@ debitModal.addEventListener('click', function (event) {
 
 var creditLink = document.querySelector('#sm-credit2')
 var creditModal = document.querySelector('.payments__modalCredit')
+var creditModalId = document.getElementById('creditModal');
 
 creditLink.addEventListener('click', function (event) {
   event.preventDefault()
@@ -44,6 +62,7 @@ creditModal.addEventListener('click', function (event) {
 
 var valesLink = document.querySelector('#sm-vales2')
 var valesModal = document.querySelector('.payments__modalVales')
+var valesModalId = document.getElementById('valesModal');
 
 valesLink.addEventListener('click', function (event) {
   event.preventDefault()
@@ -74,3 +93,14 @@ $(document).scroll(function () {
     $nav.attr('data-fixed', 'true')
   }
 })
+
+window.onclick = function(event) {
+	if (event.target == debitModalId) {
+		debitModal.dataset.active = 'false'
+	} else if (event.target == creditModalId) {
+    creditModal.dataset.active = 'false'
+  } else if (event.target == valesModalId) {
+    valesModal.dataset.active = 'false'
+  }
+}
+
