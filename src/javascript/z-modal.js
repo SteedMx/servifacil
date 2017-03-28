@@ -41,6 +41,12 @@ var creditLink = document.querySelector('#sm-credit2')
 var creditModal = document.querySelector('.payments__modalCredit')
 var creditModalId = document.getElementById('creditModal');
 
+var paramCredit = getParameterByName('paramCredit');
+
+if (paramCredit) {
+  creditModal.dataset.active = 'true'
+}
+
 creditLink.addEventListener('click', function (event) {
   event.preventDefault()
 
@@ -63,6 +69,12 @@ creditModal.addEventListener('click', function (event) {
 var valesLink = document.querySelector('#sm-vales2')
 var valesModal = document.querySelector('.payments__modalVales')
 var valesModalId = document.getElementById('valesModal');
+
+var paramVales = getParameterByName('paramVales');
+
+if (paramVales) {
+  valesModal.dataset.active = 'true'
+}
 
 valesLink.addEventListener('click', function (event) {
   event.preventDefault()
@@ -103,4 +115,3 @@ window.onclick = function(event) {
     valesModal.dataset.active = 'false'
   }
 }
-

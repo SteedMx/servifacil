@@ -1033,4 +1033,36 @@ $(document).ready(function () {
 
   $(".se-pre-con").fadeOut("slow");;
 
+  window.onclick = function(event) {
+    if (event.target == rsModal) {
+      rsModal.dataset.active = 'false'
+    } else if (event.target == qsModal) {
+      qsModal.dataset.active = 'false'
+    } else if (event.target == limpModal) {
+      limpModal.dataset.active = 'false'
+    } else if (event.target == valesModal) {
+      valesModal.dataset.active = 'false'
+    } else if (event.target == mfactModal) {
+      mfactModal.dataset.active = 'false'
+    } else if (event.target == failureModal) {
+      failureModal.dataset.active = 'false'
+    } else if (event.target == historyModal) {
+      historyModal.dataset.active = 'false'
+    } else if (event.target == bolsaModal) {
+      bolsaModal.dataset.active = 'false'
+    } else if (event.target == mgasModal) {
+      mgasModal.dataset.active = 'false'
+    } else if (event.target == gasModal) {
+      gasModal.dataset.active = 'false'
+    } else if (event.target == sprovModal) {
+      sprovModal.dataset.active = 'false'
+    } else if (event.target == factModal) {
+      factModal.dataset.active = 'false'
+    } else if (event.target == successModal) {
+      successModal.dataset.active = 'false'
+    } else if (event.target == misionModal) {
+      misionModal.dataset.active = 'false'
+    }
+  }
+
 })
