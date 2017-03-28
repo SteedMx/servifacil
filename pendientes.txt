@@ -1,0 +1,15 @@
+Poner en amarillo el menu activo
+
+Arreglar link precios en productos
+
+Map por ti al final
+
+Banner de debito revolvente a productos -> debito en el mismo tab
+
+Que se cierre afuera de la ventana
+
+TicketCar a contacto
+
+Ubicanos ahora es una foto
+
+Servicios checar color en firefox

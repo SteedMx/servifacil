@@ -151,7 +151,7 @@ $(document).ready(function () {
     limpModal.dataset.active = 'false'
   })
 
-  var mgasLink = document.querySelector('#mgas')
+  var mgasLink = document.querySelector('#know')
   var mgasModal = document.querySelector('#mgas-modal')
   var close = document.querySelector('#close')
 

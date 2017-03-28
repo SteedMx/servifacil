@@ -1,10 +1,12 @@
 .us
-  background transparent
+  background #f93
+  color white
 
   &__container
     margin 0 auto
     padding 4rem 0 2rem 0
-    width 1200px
+    //width 1200px ORIGINAL
+    width 100%
 
   &__header
     display block
@@ -16,17 +18,21 @@
     border-bottom 4px solid #cc3333
     display inline-block
     font-size 2rem
-    margin 8rem auto 2rem auto
+    margin 0rem auto 2rem auto
 
   &__sections
+    /*
     overflow: hidden
     padding 0 100px 0 100px
-    background linear-gradient(0, #f93 70%, rgba(230, 230, 230, 0) 50%)
+    */
+    background #f93
+    /*background linear-gradient(0, #f93 70%, rgba(230, 230, 230, 0) 50%)
     display flex
     margin 0 -10vw -22rem -10vw
     justify-content space-around
     position relative
     border-bottom 2px solid white
+    */
 
   &__section
     flex stretch
@@ -95,4 +101,5 @@
 
   @media all and (min-width 1201px)
     &__container
-      width 1200px
+      //width 1200px ORIGINAL
+      width 100%

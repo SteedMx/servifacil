@@ -1,9 +1,11 @@
 $(document).ready(function () {
  $('.us__sections').slick({
     autoplay: true,
+    autoplaySpeed: 3000,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    arrows: true,
     responsive : [
       {
         breakpoint: 800,
@@ -51,7 +53,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     dots: true
   })
 })
