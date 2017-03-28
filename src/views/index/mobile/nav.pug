@@ -10,11 +10,11 @@ nav(class='nav-mobile')
 
   ul(class='nav-mobile__tabs', data-active='false')
     li(class='nav-mobile__tabsItem')
-      a(class='nav-mobile__tabsLink', href='#us') NOSOTROS
+      a(class='nav-mobile__tabsLink', onclick="$('#navbar__nosotros').click()") NOSOTROS
     li(class='nav-mobile__tabsItem')
-      a(class='nav-mobile__tabsLink', href='#know') UBICACIÓN
+      a(class='nav-mobile__tabsLink', onclick="$('#navbar__ubicanos').click()") UBICACIÓN
     li(class='nav-mobile__tabsItem')
-      a(class='nav-mobile__tabsLink', href='#services') SERVICIOS
+      a(class='nav-mobile__tabsLink', onclick="$('#navbar__servicios').click()") SERVICIOS
     li(class='nav-mobile__tabsItem')
       a(class='nav-mobile__tabsLink', href='metodos.html') PRODUCTOS
     li(class='nav-mobile__tabsItem')
@@ -22,6 +22,6 @@ nav(class='nav-mobile')
     li(class='nav-mobile__tabsItem')
       a(class='nav-mobile__tabsLink', href='http://187.141.115.82/') FLOTILLAS
     li(class='nav-mobile__tabsItem')
-      a(class='nav-mobile__tabsLink', href='http://www.gob.mx/cre/articulos/precios-maximos-vigentes-de-los-combustibles?idiom=es', target='_blank') PRECIOS
+      a(class='nav-mobile__tabsLink', target="_blank", href='/tabla_de_precios.pdf') PRECIOS
     li(class='nav-mobile__tabsItem')
-      a(class='nav-mobile__tabsLink', href='#contact') CONTACTO
+      a(class='nav-mobile__tabsLink', onclick="$('#navbar__contacto').click()") CONTACTO

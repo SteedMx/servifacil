@@ -1,9 +1,13 @@
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
 .hero
   background url(../images/metodos-gradient-bg.png),
              url(../images/terminal-bg.jpg)
   background-position center top
   background-repeat no-repeat
   background-size cover
+  height 100vh
+  overflow hidden
   font-family 'Flama Basic'
 
   &__container
@@ -20,17 +24,19 @@
   &__title
     color rgb(250, 250, 250)
     font-size 7rem
-    margin 8rem auto
+    margin 4rem auto
     text-align center
 
   &__image
-    height 100px
+    max-height: 192px;
+    max-width: 84vw;
 
   &__float
     overflow hidden
     padding 2rem 0
     width 100%
     display flex
+    align-items center
     justify-content space-around
 
   &__section
@@ -55,6 +61,7 @@
     margin 0
     padding 0
     width 100vw
+    overflow auto
 
     &__container
       box-sizing border-box
@@ -67,9 +74,13 @@
       font-size 1.5rem
       margin 6rem auto 4rem auto
 
+    /*
     &__section
-    &__float
       display none
+    */
+
+    &__float
+      flex-direction column
 
     &__label
       color white

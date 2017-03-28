@@ -61,7 +61,7 @@ $(document).ready(function () {
     var windscroll = $(window).scrollTop();
 
     if (windscroll >= 50) {
-      $('.nav').css('background-color','#c33');
+      //$('.nav').css('background-color','#c33');
 
       $('.anchor').each(function(i) {
           if ($(this).position().top <= windscroll + 200) {
@@ -70,7 +70,7 @@ $(document).ready(function () {
           }
       });
     } else {
-      $('.nav').css('background-color','transparent');
+      //$('.nav').css('background-color','transparent');
       $('.nav a.active').removeClass('active');
       $('.nav a:first').addClass('active');
     }
