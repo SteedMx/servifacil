@@ -4,6 +4,17 @@ $(document).ready(function () {
   var misionModal = document.querySelector('#mvv-modal')
   var misionClose = document.querySelector('#mvv-close')
 
+  var paramSent = getParameterByName('paramSent');
+
+  if (paramSent) {
+    console.log('Value of paramSent = ', paramSent);
+    $(".se-pre-con").addClass("hidden");
+    $(".se-pre-sen").removeClass("hidden");
+    $(".se-pre-sen").fadeOut("slow");;
+  } else {
+    $(".se-pre-con").fadeOut("slow");;
+  }
+
   $('#navbar__ubicanos').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -1031,8 +1042,6 @@ $(document).ready(function () {
     })
   })
 
-  $(".se-pre-con").fadeOut("slow");;
-
   /*
   window.onclick = function(event) {
     if (event.target == rsModal) {
@@ -1082,6 +1091,7 @@ $(document).ready(function () {
   var paramUbi = getParameterByName('paramUbi');
   var paramServ = getParameterByName('paramServ');
   var paramCont = getParameterByName('paramCont');
+  var paramSent = getParameterByName('paramSent');
 
   setTimeout(function(){
     if (paramUs) {
