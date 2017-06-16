@@ -1,3 +1,14 @@
+// Needed by IE and Edge. Creates a 1px div for 1ms to jolt the browser into displaying the new DOM
+function cleanDisplay() {
+    console.log('were in cleanDisplay function');
+    var c = document.createElement('div');
+    c.innerHTML = 'x';
+    c.style.visibility = 'hidden';
+    c.style.height = '1px';
+    document.body.insertBefore(c, document.body.firstChild);
+    window.setTimeout(function() {document.body.removeChild(c)}, 1);
+}
+
 var debitLink = document.querySelector('#sm-debit2')
 var debitModal = document.querySelector('.payments__modalDebit')
 var debitModalId = document.getElementById('debitModal');
@@ -22,9 +33,11 @@ if (paramDebit) {
 
 debitLink.addEventListener('click', function (event) {
   event.preventDefault()
+  console.log('clicking debit')
   if (debitModal.dataset.active === 'false') {
     debitModal.dataset.active = 'true'
   }
+	cleanDisplay();
 })
 
 /*
@@ -50,10 +63,11 @@ if (paramCredit) {
 creditLink.addEventListener('click', function (event) {
   event.preventDefault()
 
-  console.log('clicking link')
+  console.log('clicking credit')
   if (creditModal.dataset.active === 'false') {
     creditModal.dataset.active = 'true'
   }
+	cleanDisplay();
 })
 
 /*
@@ -78,10 +92,13 @@ if (paramVales) {
 
 valesLink.addEventListener('click', function (event) {
   event.preventDefault()
+  console.log('clicking vales')
 
   if (valesModal.dataset.active === 'false') {
     valesModal.dataset.active = 'true'
   }
+  //jQuery('.hero__float').addClass('z').removeClass('z');
+	cleanDisplay();
 })
 
 /*
@@ -93,6 +110,35 @@ valesModal.addEventListener('click', function (event) {
   }
 })
 */
+
+var mclose = document.querySelector('#mclose')
+
+mclose.addEventListener('click', function () {
+  if (debitModal.dataset.active === 'true') {
+  debitModal.dataset.active = 'false'
+  }
+  if (valesModal.dataset.active === 'true') {
+  valesModal.dataset.active = 'false'
+  }
+  if (creditModal.dataset.active === 'true') {
+  creditModal.dataset.active = 'false'
+  }
+  cleanDisplay();
+})
+
+var valesClose = document.querySelector('#valesclose')
+
+valesClose.addEventListener('click', function () {
+  valesModal.dataset.active = 'false'
+  cleanDisplay();
+})
+
+var creditClose = document.querySelector('#creditclose')
+
+creditClose.addEventListener('click', function () {
+  creditModal.dataset.active = 'false'
+  cleanDisplay();
+})
 
 var $nav = $('.nav')
 

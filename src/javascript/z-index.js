@@ -1,4 +1,13 @@
 $(document).ready(function () {
+  // Needed by IE and Edge. Creates a 1px div for 1ms to jolt the browser into displaying the new DOM
+  function cleanDisplay() {
+      var c = document.createElement('div');
+      c.innerHTML = 'x';
+      c.style.visibility = 'hidden';
+      c.style.height = '1px';
+      document.body.insertBefore(c, document.body.firstChild);
+      window.setTimeout(function() {document.body.removeChild(c)}, 1);
+  }
 
   var misionLink = document.querySelector('#mvv-link')
   var misionModal = document.querySelector('#mvv-modal')
@@ -90,10 +99,12 @@ $(document).ready(function () {
   misionLink.addEventListener('click', function (event) {
     event.preventDefault()
     misionModal.dataset.active = 'true'
+    cleanDisplay();
   })
 
   misionClose.addEventListener('click', function () {
     misionModal.dataset.active = 'false'
+    cleanDisplay();
   })
 
   var historyLink = document.querySelector('#h-link')
@@ -103,10 +114,12 @@ $(document).ready(function () {
   historyLink.addEventListener('click', function (event) {
     event.preventDefault()
     historyModal.dataset.active = 'true'
+    cleanDisplay();
   })
 
   historyClose.addEventListener('click', function () {
     historyModal.dataset.active = 'false'
+    cleanDisplay();
   })
 
   var qsLink = document.querySelector('#qs-link')
@@ -116,10 +129,12 @@ $(document).ready(function () {
   qsLink.addEventListener('click', function (event) {
     event.preventDefault()
     qsModal.dataset.active = 'true'
+    cleanDisplay();
   })
 
   qsClose.addEventListener('click', function () {
     qsModal.dataset.active = 'false'
+    cleanDisplay();
   })
 
   var gasLink = document.querySelector('#gas')
@@ -129,10 +144,12 @@ $(document).ready(function () {
   gasLink.addEventListener('click', function (event) {
     event.preventDefault()
     gasModal.dataset.active = 'true'
+    cleanDisplay();
   })
 
   gasClose.addEventListener('click', function () {
     gasModal.dataset.active = 'false'
+    cleanDisplay();
   })
 
   var factLink = document.querySelector('#fact')
@@ -142,10 +159,12 @@ $(document).ready(function () {
   factLink.addEventListener('click', function (event) {
     event.preventDefault()
     factModal.dataset.active = 'true'
+    cleanDisplay();
   })
 
   factClose.addEventListener('click', function () {
     factModal.dataset.active = 'false'
+    cleanDisplay();
   })
 
   var limpLink = document.querySelector('#limp')
@@ -155,11 +174,13 @@ $(document).ready(function () {
   limpLink.addEventListener('click', function (event) {
     event.preventDefault()
     limpModal.dataset.active = 'true'
+    cleanDisplay();
   })
 
   limpClose.addEventListener('click', function () {
     console.log('some shit')
     limpModal.dataset.active = 'false'
+    cleanDisplay();
   })
 
   var mgasLink = document.querySelector('#know')
@@ -174,10 +195,12 @@ $(document).ready(function () {
     }, 1000)
     */
     mgasModal.dataset.active = 'true'
+    cleanDisplay();
   })
 
   close.addEventListener('click', function () {
     mgasModal.dataset.active = 'false'
+    cleanDisplay();
   })
 
   var mfactLink = document.querySelector('#mfact')
@@ -193,6 +216,7 @@ $(document).ready(function () {
 
   mclose.addEventListener('click', function () {
     mfactModal.dataset.active = 'false'
+    cleanDisplay();
   })
 
   var sprovLink = document.querySelector('#provee')
@@ -202,10 +226,12 @@ $(document).ready(function () {
   sprovLink.addEventListener('click', function (event) {
     event.preventDefault()
     sprovModal.dataset.active = 'true'
+    cleanDisplay();
   })
 
   sprovClose.addEventListener('click', function () {
     sprovModal.dataset.active = 'false'
+    cleanDisplay();
   })
 
   var spitsLink = document.querySelector('#spits')
@@ -215,10 +241,12 @@ $(document).ready(function () {
   spitsLink.addEventListener('click', function (event) {
     event.preventDefault()
     spitsModal.dataset.active = 'true'
+    cleanDisplay();
   })
 
   spitsClose.addEventListener('click', function () {
     spitsModal.dataset.active = 'false'
+    cleanDisplay();
   })
 
   var rsLink = document.querySelector('#rs')
@@ -228,10 +256,12 @@ $(document).ready(function () {
   rsLink.addEventListener('click', function (event) {
     event.preventDefault()
     rsModal.dataset.active = 'true'
+    cleanDisplay();
   })
 
   rsClose.addEventListener('click', function () {
     rsModal.dataset.active = 'false'
+    cleanDisplay();
   })
 
   var bolsaLink = document.querySelector('#bolsa')
@@ -242,10 +272,12 @@ $(document).ready(function () {
     console.log('click')
     event.preventDefault()
     bolsaModal.dataset.active = 'true'
+    cleanDisplay();
   })
 
   bolsaClose.addEventListener('click', function () {
     bolsaModal.dataset.active = 'false'
+    cleanDisplay();
   })
 
   /*!
