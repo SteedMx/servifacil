@@ -52,7 +52,7 @@ app.post(/\/contact$/, (req, res) => {
 	// setup e-mail data, even with unicode symbols
 	var mailOptions = {
 			from: '"Sitio Web Servifácil " <servifacil@steed.mx>', // sender address (who sends)
-			to: 'gerenciadf@servifacil.com.mx, servicioaclientesdf@servifacil.com.mx, robertodelvalle@servifacil.com.mx, eugeniodelvalle@servifacil.com.mx, sfsvales@servifacil.com.mx, gestiondeservicios@servifacil.com.mx, jefventasdf@servifacil.com.mx, clientes@servifacil.com.mx, matias@steed.mx', // list of receivers (who receives)
+			to: 'gerenciadf@servifacil.com.mx, servicioaclientesdf@servifacil.com.mx, robertodelvalle@servifacil.com.mx, eugeniodelvalle@servifacil.com.mx, sfsvales@servifacil.com.mx, gestiondeservicios@servifacil.com.mx, jefventasdf@servifacil.com.mx, clientes@servifacil.com.mx, nvizuet@servifacil.com.mx, matias@steed.mx', // list of receivers (who receives)
 			subject: 'Forma de contacto del sitio ', // Subject line
 			html: '<b>Mensaje enviado desde la forma de contacto en www.servifacil.com.mx </b><br> Nombre del cliente: ' + body.name + '<br> Correo electrónico: ' + body.email + '<br> Asunto: ' + body.subject + '<br> Mensaje: ' + body.message// html body
 	};

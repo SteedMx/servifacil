@@ -13,6 +13,18 @@ $(document).ready(function () {
   var misionModal = document.querySelector('#mvv-modal')
   var misionClose = document.querySelector('#mvv-close')
 
+  misionLink.addEventListener('click', function (event) {
+    console.log('Clicked misionLink');
+    event.preventDefault()
+    misionModal.dataset.active = 'true'
+    cleanDisplay();
+  })
+
+  misionClose.addEventListener('click', function () {
+    misionModal.dataset.active = 'false'
+    cleanDisplay();
+  })
+
   var paramSent = getParameterByName('paramSent');
 
   if (paramSent) {
@@ -96,22 +108,12 @@ $(document).ready(function () {
     }
   }).scroll();
 
-  misionLink.addEventListener('click', function (event) {
-    event.preventDefault()
-    misionModal.dataset.active = 'true'
-    cleanDisplay();
-  })
-
-  misionClose.addEventListener('click', function () {
-    misionModal.dataset.active = 'false'
-    cleanDisplay();
-  })
-
   var historyLink = document.querySelector('#h-link')
   var historyModal = document.querySelector('#h-modal')
   var historyClose = document.querySelector('#h-close')
 
   historyLink.addEventListener('click', function (event) {
+    console.log('Clicked h-link');
     event.preventDefault()
     historyModal.dataset.active = 'true'
     cleanDisplay();
@@ -127,6 +129,7 @@ $(document).ready(function () {
   var qsClose = document.querySelector('#qs-close')
 
   qsLink.addEventListener('click', function (event) {
+    console.log('Clicked qsLink');
     event.preventDefault()
     qsModal.dataset.active = 'true'
     cleanDisplay();
@@ -254,6 +257,7 @@ $(document).ready(function () {
   var rsClose = document.querySelector('#rs-close')
 
   rsLink.addEventListener('click', function (event) {
+    console.log('Clicked rsLink');
     event.preventDefault()
     rsModal.dataset.active = 'true'
     cleanDisplay();
@@ -1074,7 +1078,6 @@ $(document).ready(function () {
     })
   })
 
-  /*
   window.onclick = function(event) {
     if (event.target == rsModal) {
       rsModal.dataset.active = 'false'
@@ -1082,30 +1085,26 @@ $(document).ready(function () {
       qsModal.dataset.active = 'false'
     } else if (event.target == limpModal) {
       limpModal.dataset.active = 'false'
-    } else if (event.target == valesModal) {
-      valesModal.dataset.active = 'false'
     } else if (event.target == mfactModal) {
       mfactModal.dataset.active = 'false'
-    } else if (event.target == failureModal) {
-      failureModal.dataset.active = 'false'
     } else if (event.target == historyModal) {
       historyModal.dataset.active = 'false'
     } else if (event.target == bolsaModal) {
       bolsaModal.dataset.active = 'false'
     } else if (event.target == mgasModal) {
       mgasModal.dataset.active = 'false'
+    } else if (event.target == spitsModal) {
+      spitsModal.dataset.active = 'false'
     } else if (event.target == gasModal) {
       gasModal.dataset.active = 'false'
     } else if (event.target == sprovModal) {
       sprovModal.dataset.active = 'false'
     } else if (event.target == factModal) {
       factModal.dataset.active = 'false'
-    } else if (event.target == successModal) {
-      successModal.dataset.active = 'false'
     } else if (event.target == misionModal) {
       misionModal.dataset.active = 'false'
     }
-  }*/
+  }
 
   function getParameterByName(name, url) {
     if (!url) {

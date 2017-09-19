@@ -3,7 +3,9 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 3000,
     infinite: true,
-    slidesToShow: 3,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
     responsive : [
