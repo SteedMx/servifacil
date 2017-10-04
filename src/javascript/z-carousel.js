@@ -53,9 +53,15 @@ $(document).ready(function () {
 
   $('.hero__carousel').slick({
     slidesToShow: 1,
+    fade: true,
+    cssEase: 'linear',
     slidesToScroll: 1,
+    adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 12000,
+    pauseOnFocus: false,
+    pauseOnDotsHover: false,
+    pauseOnHover: false,
     dots: true
   })
 })

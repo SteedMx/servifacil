@@ -1,3 +1,59 @@
+@-webkit-keyframes myfade {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes myfade2 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes carfade {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes lavadofade {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .hero
   #link__cre
     &:hover
@@ -5,14 +61,188 @@
   margin 95px 0 0 0
   padding 0
 
+  &__carousel
+    margin 0
+    margin-bottom 0
+
   &__image
     height auto
     margin 0 auto
     padding 0
     width 100%
 
-  @media all and (max-width 450px)
-    //margin-top 58px
+  &__item
+    width 100%
+    display block
+    margin 0
+    position relative
+
+  &__item > img
+    height 100%
+    width 100%
+    position relative
+    display inline-block
+    max-width none
+
+  /*.slick-current
+    .animated1banner
+      img
+        animation myfade 13s;
+      .details
+        animation myfade2 13s;*/
+
+  .slick-current
+    .animated1banner
+      .tubo,
+      .manguera,
+      .maintext,
+      .venyhaz
+        animation myfade 12s
+      .deservifacil,
+      .losuperlitros,
+      .certificados,
+      .super
+        animation myfade2 12s
+    .lavado-banner
+      .lavado-auto,
+      .consentimos,
+      .lavado-bubbles-left,
+      .lavado-bubbles-right
+        animation carfade 12s
+      .textlavado,
+      .textpromocion
+        animation lavadofade 12s
+
+
+  .lavado-banner
+    height 48vw
+    width 100%
+    position relative
+    background-image url(../images/lavadobanner/lavado_fondo.jpg)
+    background-size cover
+    transform-style preserve-3d
+
+    .lavado-auto
+      position absolute
+      left 50%
+      top 28%
+
+      img
+        position relative
+        left -50%
+        width 40vw
+        top 25%
+
+    .textlavado
+      position absolute
+      left 50%
+      top 33%
+      width 80%
+
+      img
+        position relative
+        left -50%
+        width 100%
+
+    .lavamostuauto
+      position absolute
+      left 50%
+      width 85%
+
+      img
+        position relative
+        left -50%
+        width 100%
+
+    .consentimos
+      position absolute
+      left 50%
+      bottom 3%
+      width 85%
+
+      img
+        position relative
+        left -50%
+        width 100%
+
+    .textpromocion
+      position absolute
+      left 50%
+      bottom 1%
+      width 85%
+
+      img
+        position relative
+        left -50%
+        width 100%
+
+    .lavado-bubbles-right
+      position absolute
+      width 50%
+      right 0
+
+    .lavado-bubbles-left
+      position absolute
+      width 50%
+      left 0
+
+  .animated1banner
+    height 48vw
+    width 100%
+    position relative
+    background #b92c30
+    /*background radial-gradient(#ca2628, #962327)*/
+    background-image url(../images/fondo.png)
+    background-size cover
+    transform-style preserve-3d
+
+    .super
+      width 20%
+      left 15%
+      top 2%
+
+    .losuperlitros
+      width 40%
+      top 21%
+      left 4%
+
+    .deservifacil
+      top 64%
+      left 12%
+      width 24%
+
+    .certificados
+      width 30%
+      top 67%
+      left 24%
+
+    .manguera
+      top 0
+      left 60%
+      width 21%
+      transform translate3d(0, 0, 2px)
+
+    .venyhaz
+      width 24%
+      top 34%
+      left 72%
+
+    .maintext
+      width 24%
+      right 4%
+      top 60%
+
+    .tubo
+      width 12%
+      top 32%
+      left 57%
+      transform translate3d(0, 0, 1px)
+
+    img
+      position absolute
+
+  @media all and (max-width 1024px)
+    margin-top 58px
     //margin-bottom: -250px;
 
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
